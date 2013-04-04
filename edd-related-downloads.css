@@ -1,0 +1,35 @@
+﻿/* EDD related items */
+#isa-related-downloads {
+	display:block;
+	clear:both;
+	margin: 3em 0px;
+}
+#isa-related-downloads ul {
+	list-style-type:none;
+}
+#isa-related-downloads li {
+	display:inline-block;
+    margin: 0 2%;
+    text-align: center;
+    width: 27%;
+}
+
+#isa-related-downloads img {
+	margin:0 auto 1em auto;
+	height:auto;
+	max-width:150px;
+}
+
+/* handheld mobile phones & devices, not tablets. */
+@media screen and (max-device-width: 568px){
+
+	#isa-related-downloads li {
+	    display: block;
+	    width: 100%;
+	    margin: 10% 0px;
+	    padding: 0;
+	    max-width: 100%;
+	    height: auto;
+	}
+
+}
