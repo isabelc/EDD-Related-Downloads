@@ -13,20 +13,27 @@ Unobtrusive Styling - Fits right into your theme
 - You can modify the image style with this selector: `#isa-related-downloads img `
 - Responsive CSS is included so it looks good on any size screen.
 
-Filter by Category or Tag
--------------------------
+Works automatically. No settings needed.
+----------------------------------------
+This plugin has only 3 settings, and they are optional. These 3 options are located at `Downloads --> Settings --> Misc tab`.
 
-There is only one setting for this plugin, and it's optional. By default, downloads are related by category. You can checkmark this option to choose to filter by tag instead. The option is located at `Downloads --> Settings --> Misc tab`.
+**Setting 1: Filter by Category or Tag**
+
+By default, downloads are related by category. You can checkmark this option to choose to filter by tag instead.
+
+**Setting 2: Change the number of related items to show**
+
+By default, 3 related items are shown. You have the option to change this number.
+
+**Setting 3: Custom Related Downloads Title:**
+
+By default, the related items are headed by, "You May Also Like". You have the option to enter a custom title.
+
+For more info, go to [EDD Related Downloads](http://isabelcastillo.com/edd-related-downloads-plugin/) 
+
 
 
 Frequently Asked Questions
 --------------------------
-Can I change the number of posts that show in the "Related" loop?
-*Not yet. In the next release, yes.*
-
 Why aren't there any related downloads showing up on my single download page?
 *Most likely, there are no other downloads that share that download's tag or category.*
-
-Changelog
----------
-= 1.0 = Initial release.

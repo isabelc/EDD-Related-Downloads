@@ -2,8 +2,8 @@
 /*
 Plugin Name: EDD Related Downloads
 Plugin URI: http://isabelcastillo.com/edd-related-downloads-plugin/
-Description: Show related downloads by tag or category.
-Version: 1.0
+Description: Show related downloads by tag or category when using Easy Digital Downloads plugin.
+Version: 1.1
 Author: Isabel Castillo
 Author URI: http://isabelcastillo.com
 License: GPL2
@@ -53,7 +53,7 @@ class EDD_Related_Downloads{
 	}
 
 	/**
-	 * Adds 1 setting to the "Easy Digital Downloads > Settings > Misc" section
+	 * Add settings to the "Easy Digital Downloads > Settings > Misc" section
 	 *
 	 * @since 1.0
 	 */
@@ -62,16 +62,29 @@ class EDD_Related_Downloads{
 		$isa_eddrd_settings = array(
 			array(
 				'id' => 'isa_eddrd_settings',
-				'name' => '<strong>'. __('Related Downloads Filter', 'edd-related-downloads') . '</strong>',
-				'desc' => __( 'Filter related downloads by category.', 'edd-related-downloads'),
+				'name' => '<strong>'. __('Related Downloads Settings', 'edd-related-downloads') . '</strong>',
+				'desc' => __( 'Settings for EDD Related Downloads Plugin.', 'edd-related-downloads'),
 				'type' => 'header'
 			),
 			array(
 				'id' => 'related_filter_by_cat',
-				'name' => __('Filter By Category:', 'edd-related-downloads'), 
+				'name' => __('Filter related downloads by category:', 'edd-related-downloads'), 
 				'desc' => __( 'Check this to filter by category. By default, downloads are related by tag.', 'edd-related-downloads'),
 				'type' => 'checkbox'
-			)
+			),
+			array(
+				'id' => 'related_showposts_num',
+				'name' => __('How many related items to show:', 'edd-related-downloads'), 
+				'desc' => __( 'Enter a decent number, like between 1 and 7. Default is 3.', 'edd-related-downloads'),
+				'type' => 'text',
+			),
+			array(
+				'id' => 'related_dl_title',
+				'name' => __('Custom Related Downloads Title:', 'edd-related-downloads'), 
+				'desc' => __( 'This appears above the related items. Default is, "You May Also Like".', 'edd-related-downloads'),
+				'type' => 'text'
+			),
+
 		);
 	
 		/* Merge plugin settings with original EDD settings */
@@ -89,10 +102,22 @@ class EDD_Related_Downloads{
 	    global $post, $data, $edd_options;
 		$taxchoice = isset( $edd_options['related_filter_by_cat'] ) ? 'download_category' : 'download_tag';
 		$custom_taxterms = wp_get_object_terms( $post->ID, $taxchoice, array('fields' => 'ids') );
+
+		$howmany = ( 
+						isset( $edd_options['related_showposts_num'] ) && 
+						! empty( $edd_options['related_showposts_num'] )
+					)
+					? $edd_options['related_showposts_num'] : 3;// 1.1
+
+		$related_dl_title = ( 
+								isset( $edd_options['related_dl_title'] ) && 
+								( $edd_options['related_dl_title'] != '' )
+							)
+							? $edd_options['related_dl_title'] : __('You May Also Like', 'edd-related-downloads');// 1.1
 	    $args = array(
 				'post_type' => 'download',
 	            'post__not_in' => array($post->ID),
-	            'showposts' => 3,
+	            'showposts' => $howmany,// 1.1
 				'tax_query' => array(
 						array(
 							'taxonomy' => $taxchoice,
@@ -104,26 +129,28 @@ class EDD_Related_Downloads{
 	 
 	    $eddrd_query = new WP_Query($args);
 	        if( $eddrd_query->have_posts() ) {
-	           	$custom_text = __('Related', 'edd-related-downloads'); // YOU can edit this
-	            echo '<div id="isa-related-downloads"><h3>'.$custom_text.'</h3><ul>';
+				?>
+				<div id="isa-related-downloads"><h3>
+	            <?php echo $related_dl_title; ?>
+				</h3><ul>
+				<?php 
 	            while ($eddrd_query->have_posts()) {
 	                $eddrd_query->the_post();
 
-			if(has_post_thumbnail()) {
-			$thumb = wp_get_attachment_image_src( get_post_thumbnail_id(), 'thumbnail' );
-			}
-	            ?>
+					if(has_post_thumbnail()) {
+						$thumb = wp_get_attachment_image_src( get_post_thumbnail_id(), 'thumbnail' );
+					}
+		            ?>
 	                <li>
 						<a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">
 							<img class="wp-post-image" alt="<?php the_title_attribute(); ?>" src="<?php echo $thumb[0]; ?>" />
 							<?php the_title(); ?>
 						</a>
 					</li>
-	            <?php
-	            }
-	            echo '</ul></div>';
-	            wp_reset_query();
-	        }
+          <?php } ?>
+          </ul></div>
+		<?php wp_reset_query();
+			}
 	}
 }
 }

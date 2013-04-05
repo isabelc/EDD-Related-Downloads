@@ -5,11 +5,11 @@ Contributors: isabel104
 Tags: related posts, custom, taxonomy, taxoxnomies, download category, download tag, downloads categories, downloads tags, easy digital downloads, related items, related products
 Requires at least: 3.3
 Tested up to: 3.5.1
-Stable Tag: 1.0
+Stable Tag: 1.1
 License: GNU Version 2 or Any Later Version
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Show related downloads by tag or category.
+Show related downloads by tag or category when using Easy Digital Downloads plugin.
 
 == Description ==
 
@@ -22,9 +22,21 @@ It is simple and light. It works by default without a need for any settings. By 
 *	You can modify the image style with this selector: `#isa-related-downloads img `
 *	Responsive CSS is included so it looks good on any size screen.
 
-**Filter by Category or Tag**
+**Works automatically. No settings needed.**
 
-There is only one setting for this plugin, and it's optional. By default, downloads are related by category. You can checkmark this option to choose to filter by tag instead. The option is located at `Downloads --> Settings --> Misc tab`.
+This plugin has only 3 settings, and they are optional. These 3 options are located at `Downloads --> Settings --> Misc tab`.
+
+**Setting 1: Filter by Category or Tag**
+
+By default, downloads are related by category. You can checkmark this option to choose to filter by tag instead.
+
+**Setting 2: Change the number of related items to show**
+
+By default, 3 related items are shown. You have the option to change this number.
+
+**Setting 3: Custom Related Downloads Title:**
+
+By default, the related items are headed by, "You May Also Like". You have the option to enter a custom title.
 
 For more info, go to [EDD Related Downloads](http://isabelcastillo.com/edd-related-downloads-plugin/) 
 
@@ -35,13 +47,16 @@ For more info, go to [EDD Related Downloads](http://isabelcastillo.com/edd-relat
 
 == Frequently Asked Questions ==
 
-= Can I change the number of posts that show in the "Related" loop? =
-Not yet. In the next release, yes.
 = Why aren't there any related downloads showing up on my single download page? =
 Most likely, there are no other downloads that share that download's tag or category.
 
 == Changelog ==
 
-= 1.0 =
+= 1.1: April 4, 2013 =
+
+* New: Added setting - How many related items to show.
+* New: Added setting - Custom Related Downloads Title.
+
+= 1.0: April 3, 2013 =
 
 * Initial release.
