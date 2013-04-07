@@ -2,7 +2,7 @@
 Author URI: http://isabelcastillo.com
 Plugin URI: http://isabelcastillo.com/edd-related-downloads-plugin/
 Contributors: isabel104
-Tags: related posts, custom, taxonomy, taxoxnomies, download category, download tag, downloads categories, downloads tags, easy digital downloads, related items, related products
+Tags: EDD, related downloads, easy digital downloads, related posts, download category, download tag, downloads categories, downloads tags, related items, related products
 Requires at least: 3.3
 Tested up to: 3.5.1
 Stable Tag: 1.0
@@ -52,6 +52,11 @@ Most likely, there are no other downloads that share that download's tag or cate
 
 == Changelog ==
 
-= 1.0: April 5, 2013 =
+= 1.0: April 4, 2013 =
+
+* New: Added setting - How many related items to show.
+* New: Added setting - Custom Related Downloads Title.
+
+= 0.1: April 3, 2013 =
 
 * Initial release.
