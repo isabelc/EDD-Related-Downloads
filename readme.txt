@@ -1,11 +1,11 @@
-﻿=== EDD Related Downloads ===
+﻿=== Easy Digital Downloads - Related Downloads ===
 Author URI: http://isabelcastillo.com
 Plugin URI: http://isabelcastillo.com/edd-related-downloads-plugin/
 Contributors: isabel104
-Tags: related posts, custom, taxonomy, taxoxnomies, download category, download tag, downloads categories, downloads tags, easy digital downloads, related items, related products
+Tags: EDD, related downloads, easy digital downloads, related posts, download category, download tag, downloads categories, downloads tags, related items, related products
 Requires at least: 3.3
 Tested up to: 3.5.1
-Stable Tag: 1.1
+Stable Tag: 1.0
 License: GNU Version 2 or Any Later Version
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -42,7 +42,23 @@ For more info, go to [EDD Related Downloads](http://isabelcastillo.com/edd-relat
 
 == Installation ==
 
-1. Upload `plugin-name.php` to the `/wp-content/plugins/` directory
+**Easy Installation**
+1. In you WordPress dashboard, go to `Plugins > Add New`
+2. Search for "Easy Digital Downloads Related Downloads"
+3. When you find it, install it.
+
+**Manual Installation via WP**
+1.  After you download the plugin to your computer, login to your WordPress dashboard.
+2.  Go to `Plugins > Add New`
+2.  Click Upload.
+3.  Browse for the "easy-digital-downloads-related-downloads.zip" file that you downloaded from this page.
+4.  Click "Install Now".
+5.  Click "Activate Plugin"
+6.  You're done.
+
+
+**Really Manual Installation**
+1. Unzip `easy-digital-downloads-related-downloads.zip` directly into the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 
 == Frequently Asked Questions ==
@@ -52,11 +68,11 @@ Most likely, there are no other downloads that share that download's tag or cate
 
 == Changelog ==
 
-= 1.1: April 4, 2013 =
+= 1.0: April 4, 2013 =
 
 * New: Added setting - How many related items to show.
 * New: Added setting - Custom Related Downloads Title.
 
-= 1.0: April 3, 2013 =
+= 0.1: April 3, 2013 =
 
 * Initial release.

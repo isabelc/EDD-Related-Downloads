@@ -1,9 +1,9 @@
 <?php
 /*
-Plugin Name: EDD Related Downloads
+Plugin Name: Easy Digital Downloads - Related Downloads
 Plugin URI: http://isabelcastillo.com/edd-related-downloads-plugin/
 Description: Show related downloads by tag or category when using Easy Digital Downloads plugin.
-Version: 1.1
+Version: 1.0
 Author: Isabel Castillo
 Author URI: http://isabelcastillo.com
 License: GPL2

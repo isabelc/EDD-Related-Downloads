@@ -35,7 +35,6 @@ By default, the related items are headed by, "You May Also Like". You have the o
 For more info, go to [EDD Related Downloads](http://isabelcastillo.com/edd-related-downloads-plugin/) 
 
 
-
 Frequently Asked Questions
 --------------------------
 Why aren't there any related downloads showing up on my single download page?
