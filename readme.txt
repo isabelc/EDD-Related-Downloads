@@ -5,7 +5,7 @@ Contributors: isabel104
 Tags: EDD, related downloads, easy digital downloads, related posts, download category, download tag, downloads categories, downloads tags, related items, related products
 Requires at least: 3.3
 Tested up to: 3.5.1
-Stable Tag: 1.0
+Stable Tag: 1.1
 License: GNU Version 2 or Any Later Version
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -67,6 +67,9 @@ For more info, go to [EDD Related Downloads](http://isabelcastillo.com/edd-relat
 Most likely, there are no other downloads that share that download's tag or category.
 
 == Changelog ==
+= 1.1: April 8, 2013 =
+
+* Cosmetic tweak: Centered misaligned titles.
 
 = 1.0: April 4, 2013 =
 
