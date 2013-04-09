@@ -5,7 +5,7 @@ Contributors: isabel104
 Tags: EDD, related downloads, easy digital downloads, related posts, download category, download tag, downloads categories, downloads tags, related items, related products
 Requires at least: 3.3
 Tested up to: 3.5.1
-Stable Tag: 1.1
+Stable Tag: 1.2
 License: GNU Version 2 or Any Later Version
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -43,11 +43,13 @@ For more info, go to [EDD Related Downloads](http://isabelcastillo.com/edd-relat
 == Installation ==
 
 **Easy Installation**
-1. In you WordPress dashboard, go to `Plugins > Add New`
+
+1. In your WordPress dashboard, go to `Plugins > Add New`
 2. Search for "Easy Digital Downloads Related Downloads"
 3. When you find it, install it.
 
 **Manual Installation via WP**
+
 1.  After you download the plugin to your computer, login to your WordPress dashboard.
 2.  Go to `Plugins > Add New`
 2.  Click Upload.
@@ -67,15 +69,27 @@ For more info, go to [EDD Related Downloads](http://isabelcastillo.com/edd-relat
 Most likely, there are no other downloads that share that download's tag or category.
 
 == Changelog ==
-= 1.1: April 8, 2013 =
+
+
+= 1.2 =
+
+* Tweak: Gave late priority to related downloads action to ensure that related items proceed after any other inserted stuff by other plugins
+
+
+= 1.1 =
 
 * Cosmetic tweak: Centered misaligned titles.
 
-= 1.0: April 4, 2013 =
+= 1.0 =
 
 * New: Added setting - How many related items to show.
 * New: Added setting - Custom Related Downloads Title.
 
-= 0.1: April 3, 2013 =
+= 0.1 =
 
 * Initial release.
+
+== Upgrade Notice ==
+
+= 1.2 =
+Tweak: Gave late priority to related downloads action to ensure that related items proceed after any other inserted stuff by other plugins.
