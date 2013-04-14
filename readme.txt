@@ -6,7 +6,7 @@ Tags: EDD, related downloads, easy digital downloads, related posts, download ca
 Requires at least: 3.3
 Tested up to: 3.5.1
 Stable Tag: 1.2
-License: GNU Version 2 or Any Later Version
+License: GNU Version 2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Show related downloads by tag or category when using Easy Digital Downloads plugin.
@@ -26,9 +26,9 @@ It is simple and light. It works by default without a need for any settings. By 
 
 This plugin has only 3 settings, and they are optional. These 3 options are located at `Downloads --> Settings --> Misc tab`.
 
-**Setting 1: Filter by Category or Tag**
+**Setting 1: Filter by Tag or Category**
 
-By default, downloads are related by category. You can checkmark this option to choose to filter by tag instead.
+By default, downloads are related by tag. You can checkmark this option to choose to filter by category instead.
 
 **Setting 2: Change the number of related items to show**
 
