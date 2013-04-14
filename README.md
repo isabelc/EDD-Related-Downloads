@@ -20,9 +20,9 @@ Works automatically. No settings needed.
 ----------------------------------------
 This plugin has only 3 settings, and they are optional. These 3 options are located at `Downloads --> Settings --> Misc tab`.
 
-**Setting 1: Filter by Category or Tag**
+**Setting 1: Filter by Tag or Category**
 
-By default, downloads are related by category. You can checkmark this option to choose to filter by tag instead.
+By default, downloads are related by tag. You can checkmark this option to choose to filter by category instead.
 
 **Setting 2: Change the number of related items to show**
 
