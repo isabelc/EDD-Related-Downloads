@@ -42,24 +42,6 @@ For more info, go to [EDD Related Downloads](http://isabelcastillo.com/edd-relat
 
 == Installation ==
 
-**Easy Installation**
-
-1. In your WordPress dashboard, go to `Plugins > Add New`
-2. Search for "Easy Digital Downloads Related Downloads"
-3. When you find it, install it.
-
-**Manual Installation via WP**
-
-1.  After you download the plugin to your computer, login to your WordPress dashboard.
-2.  Go to `Plugins > Add New`
-2.  Click Upload.
-3.  Browse for the "easy-digital-downloads-related-downloads.zip" file that you downloaded from this page.
-4.  Click "Install Now".
-5.  Click "Activate Plugin"
-6.  You're done.
-
-**Really Manual Installation**
-
 1. Unzip `easy-digital-downloads-related-downloads.zip` directly into the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 
