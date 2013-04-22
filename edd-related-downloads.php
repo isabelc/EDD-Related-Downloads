@@ -3,7 +3,7 @@
 Plugin Name: Easy Digital Downloads - Related Downloads
 Plugin URI: http://isabelcastillo.com/edd-related-downloads-plugin/
 Description: Show related downloads by tag or category when using Easy Digital Downloads plugin.
-Version: 1.2
+Version: 1.3
 Author: Isabel Castillo
 Author URI: http://isabelcastillo.com
 License: GPL2
@@ -33,7 +33,11 @@ class EDD_Related_Downloads{
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue' ) );
 	    add_action( 'plugins_loaded', array( $this, 'load_textdomain' ) );
 		add_filter( 'edd_settings_misc', array( $this, 'isa_eddrd_add_settings' ) );
+		add_action( 'widgets_init', array( $this, 'register_widgets' ) );
 
+		if( ! defined( 'EDDRD_PLUGIN_DIR' ) )
+			define( 'EDDRD_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
+		require_once EDDRD_PLUGIN_DIR . 'widget-edd-related.php';
 
     }
 
@@ -47,9 +51,7 @@ class EDD_Related_Downloads{
 
 
 	public function load_textdomain() {
-
 		load_plugin_textdomain( 'edd-related-downloads', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
-
 	}
 
 	/**
@@ -98,7 +100,7 @@ class EDD_Related_Downloads{
 	 * @since 0.1
 	 */
 
-	public 	function isa_after_download_content() {
+	public function isa_after_download_content() {
 	    global $post, $data, $edd_options;
 		$taxchoice = isset( $edd_options['related_filter_by_cat'] ) ? 'download_category' : 'download_tag';
 		$custom_taxterms = wp_get_object_terms( $post->ID, $taxchoice, array('fields' => 'ids') );
@@ -152,6 +154,17 @@ class EDD_Related_Downloads{
 		<?php wp_reset_query();
 			}
 	}
+
+	
+	/** 
+	 * Registers the EDD Related Downloads Widget.
+	 * @since 1.3
+	 */
+	function register_widgets() {
+		register_widget( 'edd_related_downloads_widget' );
+	}
+
+
 }
 }
 $EDD_Related_Downloads = new EDD_Related_Downloads();

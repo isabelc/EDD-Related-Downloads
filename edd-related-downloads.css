@@ -20,6 +20,33 @@
 	max-width:150px;
 }
 
+/* widget */
+#edd-related-downloads-widget li {
+	display:block;
+	clear:both;
+	padding:0 0 1em 0;
+}
+#edd-related-downloads-widget li a {
+	display:block;
+	margin:0;
+	padding:1em 0 0 0;
+}
+#edd-related-downloads-widget li a img {
+	float:left;
+	width:24%;
+	padding:0;
+	margin:0 9% 10% 0;
+	height:auto;
+}
+#edd-related-downloads-widget li a p {
+	display:inline;
+	margin:2% 0;
+	padding:0;
+	float:left;
+	clear:none;
+	max-width:67%;
+}
+
 /* handheld mobile phones & devices, not tablets. */
 @media screen and (max-device-width: 568px){
 
@@ -30,6 +57,10 @@
 	    padding: 0;
 	    max-width: 100%;
 	    height: auto;
+	}
+
+	#edd-related-downloads-widget li a img {
+		margin:0 5% 10% 0;
 	}
 
 }
