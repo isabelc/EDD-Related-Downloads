@@ -6,7 +6,7 @@ Donate link: http://isabelcastillo.com/donate/
 Tags: EDD, related downloads, easy digital downloads, related posts, download category, download tag, downloads categories, downloads tags, related items, related products
 Requires at least: 3.3
 Tested up to: 3.5.1
-Stable Tag: 1.3
+Stable Tag: 1.4
 License: GNU Version 2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
