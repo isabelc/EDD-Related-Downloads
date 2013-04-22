@@ -36,6 +36,10 @@ class edd_related_downloads_widget extends WP_Widget {
 		if ( ! empty( $title ) )
 			echo '<h3 class="widget-title">'. $title . '</h3>';
 
+// do here if is single download
+if( is_single() && ( 'download' == get_post_type() ) ) {
+
+
 	    global $post, $data;
 		$custom_taxterms = wp_get_object_terms( $post->ID, $taxchoice, array('fields' => 'ids') );
 
@@ -73,10 +77,15 @@ class edd_related_downloads_widget extends WP_Widget {
 							<p><?php the_title(); ?></p>
 						</a>
 					</li>
-          <?php } ?>
+          	<?php } ?>
           </ul></div>
 		<?php wp_reset_query();
+
 			}
+
+
+} // end here if is single download
+
 
 		echo $after_widget;
 
