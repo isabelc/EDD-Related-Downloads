@@ -5,7 +5,7 @@ Contributors: isabel104
 Tags: EDD, related downloads, easy digital downloads, related posts, download category, download tag, downloads categories, downloads tags, related items, related products
 Requires at least: 3.3
 Tested up to: 3.5.1
-Stable Tag: 1.2
+Stable Tag: 1.3
 License: GNU Version 2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,7 +14,10 @@ Show related downloads by tag or category when using Easy Digital Downloads plug
 == Description ==
 
 This is an extension for [Easy Digital Downloads](http://wordpress.org/extend/plugins/easy-digital-downloads/) that automatically adds related downloads after the single download content on the single download page. 
-It is simple and light. It works by default without a need for any settings. By default, 3 related downloads will be shown, related by download_tag. The title and featured image will be displayed, centered nicely. 
+It is simple and light. It works by default without a need for any settings. By default, 3 related downloads will be shown, related by download_tag. The title and featured image will be displayed, centered nicely.
+
+** Widget has been added in version 1.3 **
+It also adds a related downloads widget, since version 1.3.
 
 **Unobtrusive Styling - Fits right into your theme**
 
@@ -42,26 +45,9 @@ For more info, go to [EDD Related Downloads](http://isabelcastillo.com/edd-relat
 
 == Installation ==
 
-**Easy Installation**
-
-1. In your WordPress dashboard, go to `Plugins > Add New`
-2. Search for "Easy Digital Downloads Related Downloads"
-3. When you find it, install it.
-
-**Manual Installation via WP**
-
-1.  After you download the plugin to your computer, login to your WordPress dashboard.
-2.  Go to `Plugins > Add New`
-2.  Click Upload.
-3.  Browse for the "easy-digital-downloads-related-downloads.zip" file that you downloaded from this page.
-4.  Click "Install Now".
-5.  Click "Activate Plugin"
-6.  You're done.
-
-**Really Manual Installation**
-
 1. Unzip `easy-digital-downloads-related-downloads.zip` directly into the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
+3. Optional: Go to `Downloads --> Settings --> Misc tab` to change the default settings.
 
 == Frequently Asked Questions ==
 
@@ -70,23 +56,21 @@ Most likely, there are no other downloads that share that download's tag or cate
 
 == Changelog ==
 
+= 1.3 = 
+* New: added related downloads widget
 
 = 1.2 =
-
 * Tweak: Gave late priority to related downloads action to ensure that related items proceed after any other inserted stuff by other plugins
 
 
 = 1.1 =
-
 * Cosmetic tweak: Centered misaligned titles.
 
 = 1.0 =
-
 * New: Added setting - How many related items to show.
 * New: Added setting - Custom Related Downloads Title.
 
 = 0.1 =
-
 * Initial release.
 
 == Upgrade Notice ==
