@@ -1,11 +1,12 @@
 ﻿=== Easy Digital Downloads - Related Downloads ===
 Author URI: http://isabelcastillo.com
-Plugin URI: http://isabelcastillo.com/edd-related-downloads-plugin/
+Plugin URI: http://wordpress.org/extend/plugins/easy-digital-downloads-related-downloads/
 Contributors: isabel104
+Donate link: http://isabelcastillo.com/donate/
 Tags: EDD, related downloads, easy digital downloads, related posts, download category, download tag, downloads categories, downloads tags, related items, related products
 Requires at least: 3.3
 Tested up to: 3.5.1
-Stable Tag: 1.3
+Stable Tag: 1.4.1
 License: GNU Version 2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -16,7 +17,8 @@ Show related downloads by tag or category when using Easy Digital Downloads plug
 This is an extension for [Easy Digital Downloads](http://wordpress.org/extend/plugins/easy-digital-downloads/) that automatically adds related downloads after the single download content on the single download page. 
 It is simple and light. It works by default without a need for any settings. By default, 3 related downloads will be shown, related by download_tag. The title and featured image will be displayed, centered nicely.
 
-** Widget has been added in version 1.3 **
+**New**
+
 It also adds a related downloads widget, since version 1.3.
 
 **Unobtrusive Styling - Fits right into your theme**
@@ -41,7 +43,17 @@ By default, 3 related items are shown. You have the option to change this number
 
 By default, the related items are headed by, "You May Also Like". You have the option to enter a custom title.
 
-For more info, go to [EDD Related Downloads](http://isabelcastillo.com/edd-related-downloads-plugin/) 
+For more info, see the [FAQs](http://wordpress.org/extend/plugins/easy-digital-downloads-related-downloads/faq/).
+
+**How can I give back?**
+
+Please rate the plugin, Tweet about it (mentioning @isabelphp would be appreciated), share it on Facebook, etc. I don't ask for donations, but thank you for the thought. [Go here to donate a few seconds of your time](http://isabelcastillo.com/donate/) to tweet, like, share etc. Thank you.
+
+You can also follow me on your favorite social network:
+
+[Twitter](https://twitter.com/isabelphp), [Facebook](https://www.facebook.com/isabel.8991), 
+[Google Plus](https://plus.google.com/111025990685359974539/posts)
+
 
 == Installation ==
 
@@ -55,6 +67,12 @@ For more info, go to [EDD Related Downloads](http://isabelcastillo.com/edd-relat
 Most likely, there are no other downloads that share that download's tag or category.
 
 == Changelog ==
+
+= 1.4.1 = 
+* Fixed incorrect version tagged as stable.
+
+= 1.4 = 
+* Minor tweaks to readme. Changed plugin url, added donate link, added rate it link.
 
 = 1.3 = 
 * New: added related downloads widget
