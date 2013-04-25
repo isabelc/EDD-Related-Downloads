@@ -51,10 +51,7 @@ Please rate the plugin, Tweet about it (mentioning @isabelphp would be appreciat
 
 You can also follow me on your favorite social network:
 
-[Twitter](https://twitter.com/isabelphp)
-
-[Facebook](https://www.facebook.com/isabel.8991)
-
+[Twitter](https://twitter.com/isabelphp), [Facebook](https://www.facebook.com/isabel.8991), 
 [Google Plus](https://plus.google.com/111025990685359974539/posts)
 
 
@@ -70,6 +67,9 @@ You can also follow me on your favorite social network:
 Most likely, there are no other downloads that share that download's tag or category.
 
 == Changelog ==
+
+= 1.4.1 = 
+* Fixed incorrect version tagged as stable.
 
 = 1.4 = 
 * Minor tweaks to readme. Changed plugin url, added donate link, added rate it link.

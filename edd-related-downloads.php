@@ -3,7 +3,7 @@
 Plugin Name: Easy Digital Downloads - Related Downloads
 Plugin URI: http://wordpress.org/extend/plugins/easy-digital-downloads-related-downloads/
 Description: Show related downloads by tag or category when using Easy Digital Downloads plugin.
-Version: 1.4
+Version: 1.4.1
 Author: Isabel Castillo
 Author URI: http://isabelcastillo.com
 License: GPL2
