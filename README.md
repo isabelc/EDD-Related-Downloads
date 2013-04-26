@@ -12,6 +12,19 @@ It also adds a related downloads widget, since version 1.3.
 Download the plugin from WordPress: [EDD - Related Downloads](http://downloads.wordpress.org/plugin/easy-digital-downloads-related-downloads.zip)
 
 
+Languages
+--------------------------------------------------
+
+Includes `.mo` and `.po` files for these languages:
+
+- French
+- Portuguese
+- Spanish
+
+It also includes a `.pot` file so you can easily translate into other languages. To request a language, [contact me](http://isabelcastillo.com/email-isabel/). Do the same to contribute a translation, or do it on [Github](https://github.com/isabelc/EDD-Related-Downloads).
+
+
+
 Unobtrusive Styling - Fits right into your theme
 ------------------------------------------------
 
@@ -21,7 +34,7 @@ Unobtrusive Styling - Fits right into your theme
 
 Works automatically. No settings needed.
 ----------------------------------------
-This plugin has only 3 settings, and they are optional. These 3 options are located at `Downloads --> Settings --> Misc tab`.
+This plugin has only 4 settings, and they are optional. These 4 options are located at `Downloads --> Settings --> Misc tab`.
 
 **Setting 1: Filter by Tag or Category**
 
@@ -34,6 +47,12 @@ By default, 3 related items are shown. You have the option to change this number
 **Setting 3: Custom Related Downloads Title:**
 
 By default, the related items are headed by, "You May Also Like". You have the option to enter a custom title.
+
+**Setting 4: Disable Related Downloads From Being Added to Content:**
+
+You have the option to stop related downloads from being automatically inserted on the bottom of the single download's content. This is useful if you are using the sidebar widget instead.
+
+
 
 For more info, go to [EDD Related Downloads](http://isabelcastillo.com/edd-related-downloads-plugin/) 
 

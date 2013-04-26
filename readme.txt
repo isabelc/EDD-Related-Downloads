@@ -6,7 +6,7 @@ Donate link: http://isabelcastillo.com/donate/
 Tags: EDD, related downloads, easy digital downloads, related posts, download category, download tag, downloads categories, downloads tags, related items, related products
 Requires at least: 3.3
 Tested up to: 3.5.1
-Stable Tag: 1.4.1
+Stable Tag: 1.4.2
 License: GNU Version 2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -18,8 +18,18 @@ This is an extension for [Easy Digital Downloads](http://wordpress.org/extend/pl
 It is simple and light. It works by default without a need for any settings. By default, 3 related downloads will be shown, related by download_tag. The title and featured image will be displayed, centered nicely.
 
 **New**
-
 It also adds a related downloads widget, since version 1.3.
+
+**Languages**
+
+Includes `.mo` and `.po` files for these languages:
+
+- French
+- Portuguese
+- Spanish
+
+It also includes a `.pot` file so you can easily translate into other languages. To request a language, [contact me](http://isabelcastillo.com/email-isabel/). Do the same to contribute a translation, or do it on [Github](https://github.com/isabelc/EDD-Related-Downloads).
+
 
 **Unobtrusive Styling - Fits right into your theme**
 
@@ -29,7 +39,7 @@ It also adds a related downloads widget, since version 1.3.
 
 **Works automatically. No settings needed.**
 
-This plugin has only 3 settings, and they are optional. These 3 options are located at `Downloads --> Settings --> Misc tab`.
+This plugin has only 4 settings, and they are optional. These 4 options are located at `Downloads --> Settings --> Misc tab`.
 
 **Setting 1: Filter by Tag or Category**
 
@@ -43,7 +53,13 @@ By default, 3 related items are shown. You have the option to change this number
 
 By default, the related items are headed by, "You May Also Like". You have the option to enter a custom title.
 
+
+**Setting 4: Disable Related Downloads From Being Added to Content:**
+
+You have the option to stop related downloads from being automatically inserted on the bottom of the single download's content. This is useful if you are using the sidebar widget instead.
+
 For more info, see the [FAQs](http://wordpress.org/extend/plugins/easy-digital-downloads-related-downloads/faq/).
+
 
 **How can I give back?**
 
@@ -67,6 +83,11 @@ You can also follow me on your favorite social network:
 Most likely, there are no other downloads that share that download's tag or category.
 
 == Changelog ==
+
+= 1.4.2 = 
+* Tweak: widget title will not be displayed if no related downloads exist.
+* New: ability to disable related downloads from being added to bottom of content, useful when using sidebar widget instead.
+* New: added translations for French, Portuguese, Spanish, as well as `.pot` file
 
 = 1.4.1 = 
 * Fixed incorrect version tagged as stable.
