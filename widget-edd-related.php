@@ -33,8 +33,7 @@ class edd_related_downloads_widget extends WP_Widget {
 		$taxchoice = $taxcat ? 'download_category' : 'download_tag';
 
 		echo $before_widget;
-		if ( ! empty( $title ) )
-			echo '<h3 class="widget-title">'. $title . '</h3>';
+
 
 if( is_single() && ( 'download' == get_post_type() ) ) {
 
@@ -58,6 +57,9 @@ if( is_single() && ( 'download' == get_post_type() ) ) {
 
 	    $eddrdw_query = new WP_Query($args);
 	        if( $eddrdw_query->have_posts() ) {
+
+		if ( ! empty( $title ) )
+			echo '<h3 class="widget-title">'. $title . '</h3>';
 				?>
 				<div id="edd-related-downloads-widget">
 				<ul>

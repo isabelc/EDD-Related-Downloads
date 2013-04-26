@@ -3,7 +3,7 @@
 Plugin Name: Easy Digital Downloads - Related Downloads
 Plugin URI: http://wordpress.org/extend/plugins/easy-digital-downloads-related-downloads/
 Description: Show related downloads by tag or category when using Easy Digital Downloads plugin.
-Version: 1.4.1
+Version: 1.4.2
 Author: Isabel Castillo
 Author URI: http://isabelcastillo.com
 License: GPL2
@@ -88,6 +88,14 @@ class EDD_Related_Downloads{
 				'type' => 'text'
 			),
 
+			array(
+				'id' => 'disable_related_in_content',
+				'name' => __('Disable Related Downloads Added To Content:', 'edd-related-downloads'), 
+				'desc' => __( 'Check this to stop the them from being added to the bottom of the single download content. Useful if you are using the sidebar widget instead. Or you could leave this in, set to category, and the widget set to tags, or vice-versa.', 'edd-related-downloads'),
+				'type' => 'checkbox'
+			),
+
+
 		);
 	
 		/* Merge plugin settings with original EDD settings */
@@ -130,8 +138,13 @@ class EDD_Related_Downloads{
 					)
 	    );
 	 
-	    $eddrd_query = new WP_Query($args);
-	        if( $eddrd_query->have_posts() ) {
+		$eddrd_query = new WP_Query($args);
+
+		$go = isset( $edd_options['disable_related_in_content'] ) ? '' : 'go';
+
+           
+		if( $eddrd_query->have_posts() && $go  ) {
+	
 				?>
 				<div id="isa-related-downloads"><h3>
 	            <?php echo $related_dl_title; ?>
