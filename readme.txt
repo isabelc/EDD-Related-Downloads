@@ -53,8 +53,6 @@ By default, 3 related items are shown. You have the option to change this number
 
 By default, the related items are headed by, "You May Also Like". You have the option to enter a custom title.
 
-For more info, see the [FAQs](http://wordpress.org/extend/plugins/easy-digital-downloads-related-downloads/faq/).
-
 **Setting 4: Disable Related Downloads From Being Added to Content:**
 
 You have the option to stop related downloads from being automatically inserted on the bottom of the single download's content. This is useful if you are using the sidebar widget instead.
