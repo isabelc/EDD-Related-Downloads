@@ -26,6 +26,12 @@
 	clear:both;
 	padding:0 0 1em 0;
 }
+
+#edd-related-downloads-widget li:after {
+ display: block; visibility: hidden; float: none; clear: both; text-indent: -9999px; content: ".";
+
+}
+
 #edd-related-downloads-widget li a {
 	display:block;
 	margin:0;

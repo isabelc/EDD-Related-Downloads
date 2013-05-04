@@ -11,7 +11,7 @@ class edd_related_downloads_widget extends WP_Widget {
 	public function __construct() {
 		parent::__construct(
 	 		'edd_related_downloads_widget',
-			__('EDD Related Downloads Widget', 'edd-related-downloads'),
+			__('EDD Related Downloads by Isa', 'edd-related-downloads'),
 			array( 'description' => __( 'Display related downloads.', 'edd-related-downloads' ), )
 		);
 	}
@@ -74,7 +74,7 @@ if( is_single() && ( 'download' == get_post_type() ) ) {
 	                <li>
 						<a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">
 							<img class="wp-post-image" alt="<?php the_title_attribute(); ?>" src="<?php echo $thumb[0]; ?>" />
-							<p><?php the_title(); ?></p>
+							<p><?php echo strip_tags( the_title('','', false) ); ?></p>
 						</a>
 					</li>
           <?php } ?>

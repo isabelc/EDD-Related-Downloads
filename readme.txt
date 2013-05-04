@@ -83,6 +83,11 @@ Most likely, there are no other downloads that share that download's tag or cate
 
 == Changelog ==
 
+= 1.4.3 = 
+* Fixed discrepancy with the Widgets Pack extension by Matt Varone
+* Tweak: added clearfix to sidebar widget
+* Tweak: removed itemprop="name" from titles of related downloads, so as to not interfere with main title
+
 = 1.4.2 = 
 * Tweak: widget title will not be displayed if no related downloads exist.
 * New: ability to disable related downloads from being added to bottom of content, useful when using sidebar widget instead.
