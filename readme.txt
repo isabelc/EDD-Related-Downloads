@@ -83,6 +83,9 @@ Most likely, there are no other downloads that share that download's tag or cate
 
 == Changelog ==
 
+= 1.4.4 = 
+* Updated translation files with new strings.
+
 = 1.4.3 = 
 * Fixed discrepancy with the Widgets Pack extension by Matt Varone
 * Tweak: added clearfix to sidebar widget

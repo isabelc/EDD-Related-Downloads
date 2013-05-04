@@ -1,78 +1,189 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: EDD Related Downloads\n"
-"POT-Creation-Date: 2013-04-25 19:21-0500\n"
-"PO-Revision-Date: 2013-04-25 22:24-0500\n"
-"Last-Translator: \n"
+"POT-Creation-Date: 2013-05-03 21:10-0500\n"
+"PO-Revision-Date: 2013-05-03 21:15-0500\n"
+"Last-Translator: Isabel Castillo <isabel@isabelcastillo.com>\n"
 "Language-Team: IC <isabel@isabelcastillo.com>\n"
+"Language: Portuguese\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.5.5\n"
 "X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
 "X-Poedit-Basepath: .\n"
-"Language: Portuguese\n"
 "X-Poedit-SearchPath-0: C:\\Users\\Isabel\\Documents\\WP-Plugins\\easy-"
 "digital-downloads-related-downloads\\trunk\n"
 
-#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads\trunk/edd-related-downloads.php:68
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.1/edd-related-downloads.php:65
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.2/edd-related-downloads.php:65
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.3/edd-related-downloads.php:67
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.4/edd-related-downloads.php:68
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.4.1/edd-related-downloads.php:68
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.4.2/edd-related-downloads.php:68
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.4.3/edd-related-downloads.php:68
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/trunk/edd-related-downloads.php:68
 msgid "Related Downloads Settings"
 msgstr "Downloads Relacionados Configurações"
 
-#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads\trunk/edd-related-downloads.php:69
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.1/edd-related-downloads.php:66
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.2/edd-related-downloads.php:66
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.3/edd-related-downloads.php:68
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.4/edd-related-downloads.php:69
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.4.1/edd-related-downloads.php:69
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.4.2/edd-related-downloads.php:69
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.4.3/edd-related-downloads.php:69
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/trunk/edd-related-downloads.php:69
 msgid "Settings for EDD Related Downloads Plugin."
 msgstr "Configurações para EDD Transferências Relacionados Plugin."
 
-#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads\trunk/edd-related-downloads.php:74
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.1/edd-related-downloads.php:71
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.2/edd-related-downloads.php:71
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.3/edd-related-downloads.php:73
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.4/edd-related-downloads.php:74
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.4.1/edd-related-downloads.php:74
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.4.2/edd-related-downloads.php:74
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.4.3/edd-related-downloads.php:74
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/trunk/edd-related-downloads.php:74
 msgid "Filter related downloads by category:"
 msgstr "Filtro de downloads relacionados por categoria:"
 
-#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads\trunk/edd-related-downloads.php:75
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.1/edd-related-downloads.php:72
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.2/edd-related-downloads.php:72
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.3/edd-related-downloads.php:74
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.4/edd-related-downloads.php:75
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.4.1/edd-related-downloads.php:75
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.4.2/edd-related-downloads.php:75
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.4.3/edd-related-downloads.php:75
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/trunk/edd-related-downloads.php:75
 msgid ""
 "Check this to filter by category. By default, downloads are related by tag."
 msgstr ""
 "Marque esta opção para filtrar por categoria. Por padrão, os downloads estão "
 "relacionados por tag."
 
-#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads\trunk/edd-related-downloads.php:80
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.1/edd-related-downloads.php:77
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.2/edd-related-downloads.php:77
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.3/edd-related-downloads.php:79
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.4/edd-related-downloads.php:80
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.4.1/edd-related-downloads.php:80
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.4.2/edd-related-downloads.php:80
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.4.3/edd-related-downloads.php:80
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/trunk/edd-related-downloads.php:80
 msgid "How many related items to show:"
 msgstr "Quantos itens relacionados para mostrar:"
 
-#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads\trunk/edd-related-downloads.php:81
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.1/edd-related-downloads.php:78
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.2/edd-related-downloads.php:78
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.3/edd-related-downloads.php:80
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.4/edd-related-downloads.php:81
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.4.1/edd-related-downloads.php:81
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.4.2/edd-related-downloads.php:81
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.4.3/edd-related-downloads.php:81
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/trunk/edd-related-downloads.php:81
 msgid "Enter a decent number, like between 1 and 7. Default is 3."
 msgstr "Digite um número decente, como entre 1 e 7. O padrão é 3."
 
-#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads\trunk/edd-related-downloads.php:86
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.1/edd-related-downloads.php:83
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.2/edd-related-downloads.php:83
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.3/edd-related-downloads.php:85
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.4/edd-related-downloads.php:86
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.4.1/edd-related-downloads.php:86
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.4.2/edd-related-downloads.php:86
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.4.3/edd-related-downloads.php:86
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/trunk/edd-related-downloads.php:86
 msgid "Custom Related Downloads Title:"
 msgstr "Personalizado Transferências Relacionados Título:"
 
-#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads\trunk/edd-related-downloads.php:87
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.1/edd-related-downloads.php:84
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.2/edd-related-downloads.php:84
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.3/edd-related-downloads.php:86
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.4/edd-related-downloads.php:87
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.4.1/edd-related-downloads.php:87
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.4.2/edd-related-downloads.php:87
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.4.3/edd-related-downloads.php:87
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/trunk/edd-related-downloads.php:87
 msgid ""
 "This appears above the related items. Default is, \"You May Also Like\"."
 msgstr ""
 "Isso aparece acima dos itens relacionados. O padrão é, Você também pode "
 "desejar."
 
-#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads\trunk/edd-related-downloads.php:119
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.1/edd-related-downloads.php:116
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.2/edd-related-downloads.php:116
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.3/edd-related-downloads.php:118
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.4/edd-related-downloads.php:119
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.4.1/edd-related-downloads.php:119
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.4.2/edd-related-downloads.php:127
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.4.3/edd-related-downloads.php:127
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/trunk/edd-related-downloads.php:127
 msgid "You May Also Like"
 msgstr "Você também pode desejar"
 
-#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads\trunk/widget-edd-related.php:14
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.3/widget-edd-related.php:14
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.4/widget-edd-related.php:14
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.4.1/widget-edd-related.php:14
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.4.2/widget-edd-related.php:14
 msgid "EDD Related Downloads Widget"
 msgstr "EDD Downloads Relacionados Widget"
 
-#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads\trunk/widget-edd-related.php:15
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.3/widget-edd-related.php:15
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.4/widget-edd-related.php:15
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.4.1/widget-edd-related.php:15
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.4.2/widget-edd-related.php:15
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.4.3/widget-edd-related.php:15
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/trunk/widget-edd-related.php:15
 msgid "Display related downloads."
 msgstr "Exibição de downloads relacionados."
 
-#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads\trunk/widget-edd-related.php:126
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.3/widget-edd-related.php:124
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.4/widget-edd-related.php:124
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.4.1/widget-edd-related.php:124
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.4.2/widget-edd-related.php:126
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.4.3/widget-edd-related.php:126
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/trunk/widget-edd-related.php:126
 msgid "Title:"
 msgstr "Título:"
 
-#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads\trunk/widget-edd-related.php:128
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.3/widget-edd-related.php:126
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.4/widget-edd-related.php:126
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.4.1/widget-edd-related.php:126
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.4.2/widget-edd-related.php:128
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.4.3/widget-edd-related.php:128
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/trunk/widget-edd-related.php:128
 msgid "How many related downloads to show: "
 msgstr "Quantos de downloads relacionados para mostrar:"
 
-#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads\trunk/widget-edd-related.php:130
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.3/widget-edd-related.php:128
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.4/widget-edd-related.php:128
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.4.1/widget-edd-related.php:128
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.4.2/widget-edd-related.php:130
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.4.3/widget-edd-related.php:130
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/trunk/widget-edd-related.php:130
 msgid " Filter By Category Instead of Tag"
 msgstr "Filtrar por categoria vez de Tag"
+
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.4.2/edd-related-downloads.php:93
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.4.3/edd-related-downloads.php:93
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/trunk/edd-related-downloads.php:93
+msgid "Disable Related Downloads Added To Content:"
+msgstr "Desativar Downloads Relacionados Adicionado Para Conteúdo:"
+
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.4.2/edd-related-downloads.php:94
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.4.3/edd-related-downloads.php:94
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/trunk/edd-related-downloads.php:94
+msgid ""
+"Check this to stop the them from being added to the bottom of the single "
+"download content. Useful if you are using the sidebar widget instead. Or you "
+"could leave this in, set to category, and the widget set to tags, or vice-"
+"versa."
+msgstr ""
+"Verificar esta para parar a que eles sejam adicionados à parte inferior do "
+"teor de transferência individual. Útil se você estiver usando o widget da "
+"barra lateral em seu lugar. Ou você pode deixar isso em, conjunto com a "
+"categoria, eo conjunto de widgets para marcas, ou vice-versa."
+
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/tags/1.4.3/widget-edd-related.php:14
+#: C:\Users\Isabel\Documents\WP-Plugins\easy-digital-downloads-related-downloads/trunk/widget-edd-related.php:14
+msgid "EDD Related Downloads by Isa"
+msgstr "EDD Downloads Relacionados por Isa"
