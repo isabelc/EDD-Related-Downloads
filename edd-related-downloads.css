@@ -7,14 +7,14 @@
 #isa-related-downloads ul {
 	list-style-type:none;
 }
-#isa-related-downloads li {
+#isa-related-downloads li, #isa-related-downloads #edd-related-downloads-widget li {
 	display:inline-block;
     margin: 0 2%;
     text-align: center;
     width: 27%;
 }
 
-#isa-related-downloads img {
+#isa-related-downloads img, #isa-related-downloads #edd-related-downloads-widget img {
 	margin:0 auto 1em auto;
 	height:auto;
 	max-width:150px;
@@ -44,6 +44,10 @@
 	margin:0 9% 10% 0;
 	height:auto;
 }
+
+
+ #isa-related-downloads #edd-related-downloads-widget img {width:auto;height:auto;float:none;}
+
 #edd-related-downloads-widget li a p {
 	display:inline;
 	margin:2% 0;
@@ -53,10 +57,12 @@
 	max-width:67%;
 }
 
+#isa-related-downloads #edd-related-downloads-widget li a p {float:none;text-align:center;max-width:90%;}
+
 /* handheld mobile phones & devices, not tablets. */
 @media screen and (max-device-width: 568px){
 
-	#isa-related-downloads li {
+	#isa-related-downloads li, #isa-related-downloads #edd-related-downloads-widget li {
 	    display: block;
 	    width: 100%;
 	    margin: 10% 0px;
