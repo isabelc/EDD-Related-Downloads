@@ -1,12 +1,12 @@
 ﻿=== Easy Digital Downloads - Related Downloads ===
 Author URI: http://isabelcastillo.com
-Plugin URI: http://wordpress.org/extend/plugins/easy-digital-downloads-related-downloads/
+Plugin URI: http://wordpress.org/plugins/easy-digital-downloads-related-downloads/
 Contributors: isabel104
 Donate link: http://isabelcastillo.com/donate/
 Tags: EDD, related downloads, easy digital downloads, related posts, download category, download tag, downloads categories, downloads tags, related items, related products
 Requires at least: 3.3
-Tested up to: 3.5.1
-Stable Tag: 1.4.4
+Tested up to: 3.5.2
+Stable Tag: 1.4.5
 License: GNU Version 2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,7 +14,7 @@ Show related downloads by tag or category when using Easy Digital Downloads plug
 
 == Description ==
 
-This is an extension for [Easy Digital Downloads](http://wordpress.org/extend/plugins/easy-digital-downloads/) that automatically adds related downloads after the single download content on the single download page. 
+This is an extension for [Easy Digital Downloads](http://wordpress.org/plugins/easy-digital-downloads/) that automatically adds related downloads after the single download content on the single download page. 
 It is simple and light. It works by default without a need for any settings. By default, 3 related downloads will be shown, related by download_tag. The title and featured image will be displayed, centered nicely. The related downloads are added right below the content of the single download.
 
 **Optional - use it as widget, instead.**
@@ -57,7 +57,9 @@ By default, the related items are headed by, "You May Also Like". You have the o
 
 You have the option to stop related downloads from being automatically inserted on the bottom of the single download's content. This is useful if you are using the sidebar widget instead.
 
-For more info, see the [FAQs](http://wordpress.org/extend/plugins/easy-digital-downloads-related-downloads/faq/).
+For more info, see the [FAQs](http://wordpress.org/plugins/easy-digital-downloads-related-downloads/faq/).
+
+For support or to report bugs, use the support forum link above, or use [GitHub](https://github.com/isabelc/EDD-Related-Downloads).
 
 
 == Installation ==
@@ -112,6 +114,11 @@ However, the 2 above will style it just like the sidebar widget, which is list-s
 1. Settings at Downloads -> Settings -> Misc tab
 
 == Changelog ==
+
+= 1.4.5 = 
+* Tweak: Added compatibility with EDD Changelog plugin, moved related downloads down below the changelog.
+* Tweak: removed extend from plugin URI.
+
 
 = 1.4.4 = 
 * New: added CSS for grid-style widget
