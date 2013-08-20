@@ -5,8 +5,8 @@ Contributors: isabel104
 Donate link: http://isabelcastillo.com/donate/
 Tags: EDD, related downloads, easy digital downloads, related posts, download category, download tag, downloads categories, downloads tags, related items, related products
 Requires at least: 3.3
-Tested up to: 3.5.2
-Stable Tag: 1.4.5
+Tested up to: 3.6
+Stable Tag: 1.4.6
 License: GNU Version 2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -57,9 +57,9 @@ By default, the related items are headed by, "You May Also Like". You have the o
 
 You have the option to stop related downloads from being automatically inserted on the bottom of the single download's content. This is useful if you are using the sidebar widget instead.
 
-For more info, see the [FAQs](http://wordpress.org/plugins/easy-digital-downloads-related-downloads/faq/).
+For more info, see the [installation instructions](http://wordpress.org/plugins/easy-digital-downloads-related-downloads/installation/), and the [FAQs](http://wordpress.org/plugins/easy-digital-downloads-related-downloads/faq/).
 
-For support or to report bugs, use the support forum link above, or use [GitHub](https://github.com/isabelc/EDD-Related-Downloads).
+For support or to report bugs, use the support forum link above, or use [GitHub](https://github.com/isabelc/EDD-Related-Downloads). Forking welcome.
 
 
 == Installation ==
@@ -114,6 +114,9 @@ However, the 2 above will style it just like the sidebar widget, which is list-s
 1. Settings at Downloads -> Settings -> Misc tab
 
 == Changelog ==
+
+= 1.4.6 =
+* Update: compatible with WP 3.6
 
 = 1.4.5 = 
 * Tweak: Added compatibility with EDD Changelog plugin, moved related downloads down below the changelog.
