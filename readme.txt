@@ -6,7 +6,7 @@ Donate link: http://isabelcastillo.com/donate/
 Tags: EDD, related downloads, easy digital downloads, related posts, download category, download tag, downloads categories, downloads tags, related items, related products
 Requires at least: 3.3
 Tested up to: 3.6
-Stable Tag: 1.4.6
+Stable Tag: 1.4.7
 License: GNU Version 2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,11 +14,26 @@ Show related downloads by tag or category when using Easy Digital Downloads plug
 
 == Description ==
 
-This is an extension for [Easy Digital Downloads](http://wordpress.org/plugins/easy-digital-downloads/) that automatically adds related downloads after the single download content on the single download page. 
-It is simple and light. It works by default without a need for any settings. By default, 3 related downloads will be shown, related by download_tag. The title and featured image will be displayed, centered nicely. The related downloads are added right below the content of the single download.
+This is an extension for [Easy Digital Downloads](http://wordpress.org/plugins/easy-digital-downloads/) that automatically adds related downloads after the single download content on the single download page. It is simple and light. It works by default without a need for any settings. By default, 3 related downloads will be shown, related by download_tag. The title and featured image will be displayed, centered nicely. The related downloads are added right below the content of the single download.
 
-**Optional - use it as widget, instead.**
-It also adds a related downloads widget.
+**Optional - use it as widget**
+It also adds a Related Downloads widget.
+
+**Unobtrusive Styling - Fits right into your theme**
+
+*   The featured images adopt your theme's style for `.wp-post-image`.
+*	You can modify the image style with this selector: `#isa-related-downloads img `
+*	Responsive CSS is included so it looks good on any size screen.
+
+**Works automatically. No settings needed.**
+
+This plugin has only 4 optional settings. These 4 options are located at `Downloads --> Settings --> Misc tab`.
+
+1. Filter by Tag or Category
+2. Change the number of related items to show
+3. Custom Related Downloads Title
+4. Disable Related Downloads From Being Added to Content
+
 
 **Languages**
 
@@ -31,33 +46,7 @@ Includes `.mo` and `.po` files for these languages:
 It also includes a `.pot` file so you can easily translate into other languages.
 
 
-**Unobtrusive Styling - Fits right into your theme**
-
-*   The featured images adopt your theme's style for `.wp-post-image`.
-*	You can modify the image style with this selector: `#isa-related-downloads img `
-*	Responsive CSS is included so it looks good on any size screen.
-
-**Works automatically. No settings needed.**
-
-This plugin has only 4 settings, and they are optional. These 4 options are located at `Downloads --> Settings --> Misc tab`.
-
-**Setting 1: Filter by Tag or Category**
-
-By default, downloads are related by tag. You can checkmark this option to choose to filter by category instead.
-
-**Setting 2: Change the number of related items to show**
-
-By default, 3 related items are shown. You have the option to change this number.
-
-**Setting 3: Custom Related Downloads Title:**
-
-By default, the related items are headed by, "You May Also Like". You have the option to enter a custom title.
-
-**Setting 4: Disable Related Downloads From Being Added to Content:**
-
-You have the option to stop related downloads from being automatically inserted on the bottom of the single download's content. This is useful if you are using the sidebar widget instead.
-
-For more info, see the [installation instructions](http://wordpress.org/plugins/easy-digital-downloads-related-downloads/installation/), and the [FAQs](http://wordpress.org/plugins/easy-digital-downloads-related-downloads/faq/).
+For more info, see the [Documentation](http://isabelcastillo.com/docs/position-related-downloads-using-a-template-tag).
 
 For support or to report bugs, use the support forum link above, or use [GitHub](https://github.com/isabelc/EDD-Related-Downloads). Forking welcome.
 
@@ -93,7 +82,7 @@ However, the 2 above will style it just like the sidebar widget, which is list-s
 
 
 
-	`$inst = array( 
+`	$inst = array( 
 		'title' => 'You May Also Like',
 		'number' => 3,
 		'taxcat' => false,
@@ -114,6 +103,12 @@ However, the 2 above will style it just like the sidebar widget, which is list-s
 1. Settings at Downloads -> Settings -> Misc tab
 
 == Changelog ==
+
+= 1.4.7 =
+* New: added filter to image src so you can filter it to use custom promo images instead of the regular featured image.
+* Tweak: minified CSS file
+* Minified readme since added link to Instruction Guide.
+* Tested for WP 3.6.1 compatibility
 
 = 1.4.6 =
 * Update: compatible with WP 3.6
@@ -162,5 +157,5 @@ However, the 2 above will style it just like the sidebar widget, which is list-s
 
 == Upgrade Notice ==
 
-= 1.2 =
+= 1.4.7 =
 Tweak: Gave late priority to related downloads action to ensure that related items proceed after any other inserted stuff by other plugins.

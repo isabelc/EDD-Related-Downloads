@@ -52,9 +52,6 @@ if( is_single() && ( 'download' == get_post_type() ) ) {
 						)
 					)
 	    );
-	 
-
-
 	    $eddrdw_query = new WP_Query($args);
 	        if( $eddrdw_query->have_posts() ) {
 
@@ -66,14 +63,14 @@ if( is_single() && ( 'download' == get_post_type() ) ) {
 				<?php 
 	            while ($eddrdw_query->have_posts()) {
 	                $eddrdw_query->the_post();
-
 					if(has_post_thumbnail()) {
 						$thumb = wp_get_attachment_image_src( get_post_thumbnail_id(), 'thumbnail' );
+						$thumbsrc = $thumb[0];
 					}
 		            ?>
 	                <li>
 						<a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">
-							<img class="wp-post-image" alt="<?php the_title_attribute(); ?>" src="<?php echo $thumb[0]; ?>" />
+							<img class="wp-post-image" alt="<?php the_title_attribute(); ?>" src="<?php echo apply_filters( 'edd_related_downloads_image_src', $thumbsrc, $post ); ?>" />
 							<p><?php echo strip_tags( the_title('','', false) ); ?></p>
 						</a>
 					</li>
@@ -86,7 +83,7 @@ if( is_single() && ( 'download' == get_post_type() ) ) {
 
 		echo $after_widget;
 
-	}// end widget
+	}
 
 	/**
 	 * Sanitize widget form values as they are saved.
