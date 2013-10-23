@@ -2,15 +2,15 @@
 Author URI: http://isabelcastillo.com
 Plugin URI: http://wordpress.org/plugins/easy-digital-downloads-related-downloads/
 Contributors: isabel104
-Donate link: http://isabelcastillo.com/donate/
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=me%40isabelcastillo%2ecom
 Tags: EDD, related downloads, easy digital downloads, related posts, download category, download tag, downloads categories, downloads tags, related items, related products
 Requires at least: 3.3
-Tested up to: 3.6
-Stable Tag: 1.4.7
+Tested up to: 3.6.1
+Stable Tag: 1.4.8
 License: GNU Version 2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Show related downloads by tag or category when using Easy Digital Downloads plugin.
+Automatically show related downloads by tag or category when using Easy Digital Downloads plugin.
 
 == Description ==
 
@@ -46,7 +46,7 @@ Includes `.mo` and `.po` files for these languages:
 It also includes a `.pot` file so you can easily translate into other languages.
 
 
-For more info, see the [Documentation](http://isabelcastillo.com/docs/position-related-downloads-using-a-template-tag).
+For more info, see the [Documentation](http://isabelcastillo.com/docs/category/easy-digital-downloads-related-downloads-wordpress-plugin).
 
 For support or to report bugs, use the support forum link above, or use [GitHub](https://github.com/isabelc/EDD-Related-Downloads). Forking welcome.
 
@@ -103,6 +103,11 @@ However, the 2 above will style it just like the sidebar widget, which is list-s
 1. Settings at Downloads -> Settings -> Misc tab
 
 == Changelog ==
+
+= 1.4.8 =
+* Tweak: Now compatible with EDD Hide Download plugin.
+* Minor fix: link to Documentation was incorrect
+* Tweak: removed rate link. Added link to Docs instead.
 
 = 1.4.7 =
 * New: added filter to image src so you can filter it to use custom promo images instead of the regular featured image.

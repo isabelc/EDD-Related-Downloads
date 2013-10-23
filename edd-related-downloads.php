@@ -3,7 +3,7 @@
 Plugin Name: Easy Digital Downloads - Related Downloads
 Plugin URI: http://wordpress.org/plugins/easy-digital-downloads-related-downloads/
 Description: Show related downloads by tag or category when using Easy Digital Downloads plugin.
-Version: 1.4.7
+Version: 1.4.8
 Author: Isabel Castillo
 Author URI: http://isabelcastillo.com
 License: GPL2
@@ -34,7 +34,7 @@ class Isa_EDD_Related_Downloads{
 	    add_action( 'plugins_loaded', array( $this, 'load_textdomain' ) );
 		add_filter( 'edd_settings_misc', array( $this, 'isa_eddrd_add_settings' ) );
 		add_action( 'widgets_init', array( $this, 'register_widgets' ) );
-		add_filter('plugin_row_meta', array( $this, 'rate_link' ), 10, 2);
+		add_filter('plugin_row_meta', array( $this, 'docs_link' ), 10, 2);
 
 		if( ! defined( 'EDDRD_PLUGIN_DIR' ) )
 			define( 'EDDRD_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
@@ -111,6 +111,8 @@ class Isa_EDD_Related_Downloads{
 
 	public function isa_after_download_content() {
 	    global $post, $data, $edd_options;
+	// Compatibility fix for EDD Hide Download: save the current download's post id, in order to exclude it later
+		$exclude_post_id = $post->ID;
 		$taxchoice = isset( $edd_options['related_filter_by_cat'] ) ? 'download_category' : 'download_tag';
 		$custom_taxterms = wp_get_object_terms( $post->ID, $taxchoice, array('fields' => 'ids') );
 
@@ -118,17 +120,17 @@ class Isa_EDD_Related_Downloads{
 						isset( $edd_options['related_showposts_num'] ) && 
 						! empty( $edd_options['related_showposts_num'] )
 					)
-					? $edd_options['related_showposts_num'] : 3;// 1.1
+					? $edd_options['related_showposts_num'] : 3;
 
 		$related_dl_title = ( 
 								isset( $edd_options['related_dl_title'] ) && 
 								( $edd_options['related_dl_title'] != '' )
 							)
-							? $edd_options['related_dl_title'] : __('You May Also Like', 'edd-related-downloads');// 1.1
+							? $edd_options['related_dl_title'] : __('You May Also Like', 'edd-related-downloads');
 	    $args = array(
 				'post_type' => 'download',
 	            'post__not_in' => array($post->ID),
-	            'showposts' => $howmany,// 1.1
+	            'showposts' => $howmany,
 				'tax_query' => array(
 						array(
 							'taxonomy' => $taxchoice,
@@ -143,16 +145,12 @@ class Isa_EDD_Related_Downloads{
 		$go = isset( $edd_options['disable_related_in_content'] ) ? '' : 'go';
 
            
-		if( $eddrd_query->have_posts() && $go  ) {
-	
-				?>
-				<div id="isa-related-downloads"><h3>
-	            <?php echo $related_dl_title; ?>
-				</h3><ul>
-				<?php 
-	            while ($eddrd_query->have_posts()) {
+		if( $eddrd_query->have_posts() && $go  ) { ?>
+		<div id="isa-related-downloads"><h3><?php echo $related_dl_title; ?></h3><ul>
+		<?php while ($eddrd_query->have_posts()) {
 	                $eddrd_query->the_post();
-					if(has_post_thumbnail()) {
+			if ($post->ID == $exclude_post_id) continue;
+			if(has_post_thumbnail()) {
 						$thumb = wp_get_attachment_image_src( get_post_thumbnail_id(), 'thumbnail' );
 						$thumbsrc = $thumb[0];
 					}
@@ -178,14 +176,19 @@ class Isa_EDD_Related_Downloads{
 		register_widget( 'edd_related_downloads_widget' );
 	}
 
-	// rate link on manage plugin page, since 1.4
-	function rate_link($links, $file) {
+	
+	/**
+	* Link to Documentation
+	* @since 1.4.8
+	*/
+	function docs_link($links, $file) {
 		if ($file == plugin_basename(__FILE__)) {
-			$rate_link = '<a href="http://isabelcastillo.com/donate/">Rate It</a>';
-			$links[] = $rate_link;
+			$docs_link = '<a href="http://isabelcastillo.com/docs/category/easy-digital-downloads-related-downloads-wordpress-plugin">Docs</a>';
+			$links[] = $docs_link;
 		}
 		return $links;
 	}
+
 
 }
 }
