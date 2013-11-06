@@ -5,8 +5,8 @@ Contributors: isabel104
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=me%40isabelcastillo%2ecom
 Tags: EDD, related downloads, easy digital downloads, related posts, download category, download tag, downloads categories, downloads tags, related items, related products
 Requires at least: 3.3
-Tested up to: 3.6.1
-Stable Tag: 1.4.8
+Tested up to: 3.7.1
+Stable Tag: 1.4.9
 License: GNU Version 2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -103,6 +103,9 @@ However, the 2 above will style it just like the sidebar widget, which is list-s
 1. Settings at Downloads -> Settings -> Misc tab
 
 == Changelog ==
+
+= 1.4.9 =
+* Tested for WP 3.7.1 compatibility.
 
 = 1.4.8 =
 * Tweak: Now compatible with EDD Hide Download plugin.
