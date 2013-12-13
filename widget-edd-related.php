@@ -31,16 +31,19 @@ class edd_related_downloads_widget extends WP_Widget {
 		// do we get related by category instead of tag
 
 		$taxchoice = $taxcat ? 'download_category' : 'download_tag';
-
 		echo $before_widget;
-
 
 if( is_single() && ( 'download' == get_post_type() ) ) {
 
-	    global $post, $data;
+	    global $post, $data, $edd_options;
 		// Compatibility fix for EDD Hide Download: save the current download's post id, in order to exclude it later
 		$exclude_post_id = $post->ID;
 		$custom_taxterms = wp_get_object_terms( $post->ID, $taxchoice, array('fields' => 'ids') );
+
+$loop_orderby = isset( $edd_options['related_dl_orderby'] ) ? $edd_options['related_dl_orderby'] : 'date';
+
+$loop_order = isset( $edd_options['related_dl_order'] ) ? $edd_options['related_dl_order'] : 'DESC';
+
 	    $args = array(
 				'post_type' => 'download',
 	            'post__not_in' => array($post->ID),
@@ -51,7 +54,9 @@ if( is_single() && ( 'download' == get_post_type() ) ) {
 							'field' => 'id',
 							'terms' => $custom_taxterms
 						)
-					)
+					),
+'orderby' => $loop_orderby,
+'order' => $loop_order
 	    );
 	    $eddrdw_query = new WP_Query($args);
 	        if( $eddrdw_query->have_posts() ) {
@@ -71,7 +76,7 @@ if( is_single() && ( 'download' == get_post_type() ) ) {
 			} ?>
 	                <li>
 						<a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">
-							<img class="wp-post-image" alt="<?php the_title_attribute(); ?>" src="<?php echo apply_filters( 'edd_related_downloads_image_src', $thumbsrc, $post ); ?>" />
+							<?php if(has_post_thumbnail()) { ?><img class="wp-post-image" alt="<?php the_title_attribute(); ?>" src="<?php echo apply_filters( 'edd_related_downloads_image_src', $thumbsrc, $post ); ?>" /><?php } ?>
 							<p><?php echo strip_tags( the_title('','', false) ); ?></p>
 						</a>
 					</li>
