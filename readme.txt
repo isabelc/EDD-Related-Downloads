@@ -5,14 +5,16 @@ Contributors: isabel104
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=me%40isabelcastillo%2ecom
 Tags: EDD, related downloads, easy digital downloads, related posts, download category, download tag, downloads categories, downloads tags, related items, related products
 Requires at least: 3.3
-Tested up to: 3.7.1
-Stable Tag: 1.4.9
+Tested up to: 3.8
+Stable Tag: 1.5
 License: GNU Version 2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Automatically show related downloads by tag or category when using Easy Digital Downloads plugin.
 
 == Description ==
+
+**New since 1.5: option to choose sort order and orderby parameters.**
 
 This is an extension for [Easy Digital Downloads](http://wordpress.org/plugins/easy-digital-downloads/) that automatically adds related downloads after the single download content on the single download page. It is simple and light. It works by default without a need for any settings. By default, 3 related downloads will be shown, related by download_tag. The title and featured image will be displayed, centered nicely. The related downloads are added right below the content of the single download.
 
@@ -27,12 +29,16 @@ It also adds a Related Downloads widget.
 
 **Works automatically. No settings needed.**
 
-This plugin has only 4 optional settings. These 4 options are located at `Downloads --> Settings --> Misc tab`.
+This plugin has 6 optional settings. These options are located at `Downloads --> Settings --> Misc tab`.
 
 1. Filter by Tag or Category
 2. Change the number of related items to show
 3. Custom Related Downloads Title
 4. Disable Related Downloads From Being Added to Content
+5. Change The Default Method of Sorting (Orderby)
+6. Change The Default Sort Order
+
+For more info, see the [Documentation](http://isabelcastillo.com/docs/category/easy-digital-downloads-related-downloads-wordpress-plugin).
 
 
 **Languages**
@@ -45,8 +51,6 @@ Includes `.mo` and `.po` files for these languages:
 
 It also includes a `.pot` file so you can easily translate into other languages.
 
-
-For more info, see the [Documentation](http://isabelcastillo.com/docs/category/easy-digital-downloads-related-downloads-wordpress-plugin).
 
 For support or to report bugs, use the support forum link above, or use [GitHub](https://github.com/isabelc/EDD-Related-Downloads). Forking welcome.
 
@@ -103,6 +107,10 @@ However, the 2 above will style it just like the sidebar widget, which is list-s
 1. Settings at Downloads -> Settings -> Misc tab
 
 == Changelog ==
+
+= 1.5 =
+* New: added option to choose sort order and orderby parameters.
+* Tested for WP 3.8 compatibility.
 
 = 1.4.9 =
 * Tested for WP 3.7.1 compatibility.
@@ -167,3 +175,6 @@ However, the 2 above will style it just like the sidebar widget, which is list-s
 
 = 1.4.7 =
 Tweak: Gave late priority to related downloads action to ensure that related items proceed after any other inserted stuff by other plugins.
+
+= 1.5 =
+New: option to choose sort order and orderby parameters.

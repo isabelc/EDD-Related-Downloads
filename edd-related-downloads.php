@@ -3,7 +3,7 @@
 Plugin Name: Easy Digital Downloads - Related Downloads
 Plugin URI: http://wordpress.org/plugins/easy-digital-downloads-related-downloads/
 Description: Show related downloads by tag or category when using Easy Digital Downloads plugin.
-Version: 1.4.9
+Version: 1.5
 Author: Isabel Castillo
 Author URI: http://isabelcastillo.com
 License: GPL2
@@ -65,7 +65,7 @@ class Isa_EDD_Related_Downloads{
 		$isa_eddrd_settings = array(
 			array(
 				'id' => 'isa_eddrd_settings',
-				'name' => '<strong>'. __('Related Downloads Settings', 'edd-related-downloads') . '</strong>',
+				'name' => '<h3 class="title">'. __('Related Downloads Settings', 'edd-related-downloads') . '</h3>',
 				'desc' => __( 'Settings for EDD Related Downloads Plugin.', 'edd-related-downloads'),
 				'type' => 'header'
 			),
@@ -93,6 +93,21 @@ class Isa_EDD_Related_Downloads{
 				'name' => __('Disable Related Downloads Added To Content:', 'edd-related-downloads'), 
 				'desc' => __( 'Check this to stop the them from being added to the bottom of the single download content. Useful if you are using the sidebar widget instead. Or you could leave this in, set to category, and the widget set to tags, or vice-versa.', 'edd-related-downloads'),
 				'type' => 'checkbox'
+			),
+
+array(
+				'id' => 'related_dl_orderby',
+				'name' => __('Change The Default Method of Sorting (Orderby)', 'edd-related-downloads'), 
+				'desc' => __( 'Choose what the related downloads are sorted by. Default is by "date".', 'edd-related-downloads'),
+				'type' => 'select',
+				'options' => array('date' => 'date','ID' => 'ID','author' => 'author','title' => 'title','name' => 'name (post slug)','modified' => 'modified (last modified date)','parent' => 'parent','rand' => 'random','comment_count' => 'comment_count')
+			),
+array(
+				'id' => 'related_dl_order',
+				'name' => __('Change The Default Sort Order', 'edd-related-downloads'), 
+				'desc' => __( 'Choose the default sort order for the related downloads. Default is "DESC".', 'edd-related-downloads'),
+				'type' => 'select',
+				'options' => array('DESC' => 'DESC','ASC' => 'ASC')
 			),
 
 
@@ -124,9 +139,14 @@ class Isa_EDD_Related_Downloads{
 
 		$related_dl_title = ( 
 								isset( $edd_options['related_dl_title'] ) && 
-								( $edd_options['related_dl_title'] != '' )
+								( '' != $edd_options['related_dl_title'] )
 							)
 							? $edd_options['related_dl_title'] : __('You May Also Like', 'edd-related-downloads');
+
+$loop_orderby = isset( $edd_options['related_dl_orderby'] ) ? $edd_options['related_dl_orderby'] : 'date';
+
+$loop_order = isset( $edd_options['related_dl_order'] ) ? $edd_options['related_dl_order'] : 'DESC';
+
 	    $args = array(
 				'post_type' => 'download',
 	            'post__not_in' => array($post->ID),
@@ -137,7 +157,9 @@ class Isa_EDD_Related_Downloads{
 							'field' => 'id',
 							'terms' => $custom_taxterms
 						)
-					)
+					),
+'orderby' => $loop_orderby,
+'order' => $loop_order
 	    );
 	 
 		$eddrd_query = new WP_Query($args);
@@ -157,8 +179,9 @@ class Isa_EDD_Related_Downloads{
 		            ?>
 	                <li>
 						<a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">
-							<img class="wp-post-image" alt="<?php the_title_attribute(); ?>" src="<?php echo apply_filters( 'edd_related_downloads_image_src', $thumbsrc, $post ); ?>" /><br />
-							<?php echo strip_tags( the_title('','', false) ); ?>
+							<?php if(has_post_thumbnail()) { ?><img class="wp-post-image" alt="<?php the_title_attribute(); ?>" src="<?php echo apply_filters( 'edd_related_downloads_image_src', $thumbsrc, $post ); ?>" /><br /><?php } 
+
+	echo strip_tags( the_title('','', false) ); ?>
 						</a>
 					</li>
           <?php } ?>
