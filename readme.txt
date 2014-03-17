@@ -105,8 +105,9 @@ Please [rate the plugin](http://wordpress.org/support/view/plugin-reviews/easy-d
 == Changelog ==
 
 = 1.5.1 = 
-* Moved the settings from the "Downloads -> Misc" to "Downoads -> Extenstions" tab.
-* Tested and passed for WP 3.9 compatibility.
+* Tweak: Moved the settings from the "Downloads -> Misc" to "Downoads -> Extenstions" tab.
+* Maintenance: updated .pot file and transaltion files.
+* Maintenance: Tested and passed for WP 3.9 compatibility.
 
 = 1.5 =
 * New: added option to choose sort order and orderby parameters.
