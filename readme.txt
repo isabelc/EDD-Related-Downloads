@@ -5,7 +5,7 @@ Contributors: isabel104
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=me%40isabelcastillo%2ecom
 Tags: EDD, related downloads, easy digital downloads, related posts, download category, download tag, downloads categories, downloads tags, related items, related products
 Requires at least: 3.3
-Tested up to: 3.8.1
+Tested up to: 3.9
 Stable Tag: 1.5.1
 License: GNU Version 2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -99,7 +99,7 @@ However, the 2 above will style it just like the sidebar widget, which is list-s
 
 = How can I give back? =
 
-[Please rate the plugin, Tweet about it, share it on Facebook](http://isabelcastillo.com/donate/), etc. Thank you. You can also follow me on your favorite social network: [Twitter](https://twitter.com/isabelphp), [Facebook](https://www.facebook.com/isabel.8991), [Google Plus](https://plus.google.com/111025990685359974539/posts)
+Please [rate the plugin](http://wordpress.org/support/view/plugin-reviews/easy-digital-downloads-related-downloads). Thank you.
 == Screenshots ==
 
 1. Settings at Downloads -> Settings -> Misc tab
@@ -108,6 +108,7 @@ However, the 2 above will style it just like the sidebar widget, which is list-s
 
 = 1.5.1 = 
 * Moved the settings from the "Downloads -> Misc" to "Downoads -> Extenstions" tab.
+* Tested and passed for WP 3.9 compatibility.
 
 = 1.5 =
 * New: added option to choose sort order and orderby parameters.
