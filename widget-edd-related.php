@@ -11,8 +11,8 @@ class edd_related_downloads_widget extends WP_Widget {
 	public function __construct() {
 		parent::__construct(
 	 		'edd_related_downloads_widget',
-			__('EDD Related Downloads by Isa', 'edd-related-downloads'),
-			array( 'description' => __( 'Display related downloads.', 'edd-related-downloads' ), )
+			__('EDD Related Downloads by Isa', 'easy-digital-downloads-related-downloads'),
+			array( 'description' => __( 'Display related downloads.', 'easy-digital-downloads-related-downloads' ), )
 		);
 	}
 	/**
@@ -126,11 +126,11 @@ $loop_order = isset( $edd_options['related_dl_order'] ) ? $edd_options['related_
 					);
  		$instance = wp_parse_args( (array) $instance, $defaults );
     	?>
-		<p><label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:', 'edd-related-downloads' ); ?></label><input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo $instance['title']; ?>" /></p>
+		<p><label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:', 'easy-digital-downloads-related-downloads' ); ?></label><input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo $instance['title']; ?>" /></p>
 
-		<p><label for="<?php echo $this->get_field_id( 'number' ); ?>"><?php _e( 'How many related downloads to show: ', 'edd-related-downloads' ); ?></label><input type="text" class="widefat" id="<?php echo $this->get_field_id( 'number' ); ?>" name="<?php echo $this->get_field_name( 'number' ); ?>" value="<?php echo $instance['number']; ?>" /></p>
+		<p><label for="<?php echo $this->get_field_id( 'number' ); ?>"><?php _e( 'How many related downloads to show: ', 'easy-digital-downloads-related-downloads' ); ?></label><input type="text" class="widefat" id="<?php echo $this->get_field_id( 'number' ); ?>" name="<?php echo $this->get_field_name( 'number' ); ?>" value="<?php echo $instance['number']; ?>" /></p>
 
-	<p><input id="<?php echo $this->get_field_id( 'taxcat' ); ?>" name="<?php echo $this->get_field_name( 'taxcat' ); ?>" type="checkbox" class="checkbox" <?php checked( $instance['taxcat'], 'on' ); ?> /><label for="<?php echo $this->get_field_id( 'taxcat' ); ?>"><?php _e( ' Filter By Category Instead of Tag', 'edd-related-downloads' ); ?></label></p>
+	<p><input id="<?php echo $this->get_field_id( 'taxcat' ); ?>" name="<?php echo $this->get_field_name( 'taxcat' ); ?>" type="checkbox" class="checkbox" <?php checked( $instance['taxcat'], 'on' ); ?> /><label for="<?php echo $this->get_field_id( 'taxcat' ); ?>"><?php _e( ' Filter By Category Instead of Tag', 'easy-digital-downloads-related-downloads' ); ?></label></p>
 
 		<?php 
 	}

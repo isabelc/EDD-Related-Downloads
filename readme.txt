@@ -105,8 +105,10 @@ Please [rate the plugin](http://wordpress.org/support/view/plugin-reviews/easy-d
 == Changelog ==
 
 = 1.5.1 = 
-* Tweak: Moved the settings from the "Downloads -> Misc" to "Downoads -> Extenstions" tab.
-* Maintenance: updated .pot file and transaltion files.
+* New: the textdomain for translations has changed to the plugin slug in order to meet WordPress standards. You must update your .mo and .po files with the new textdomain - easy-digital-downloads-related-downloads_
+* New: moved the settings from the "Downloads -> Misc" tab to "Downoads -> Extenstions" tab.
+* New: singleton class.
+* Maintenance: updated .pot file and translation files.
 * Maintenance: Tested and passed for WP 3.9 compatibility.
 
 = 1.5 =

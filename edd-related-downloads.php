@@ -7,7 +7,7 @@ Version: 1.5.1
 Author: Isabel Castillo
 Author URI: http://isabelcastillo.com
 License: GPL2
-Text Domain: edd-related-downloads
+Text Domain: easy-digital-downloads-related-downloads
 Domain Path: languages
 
 Copyright 2013 - 2014 Isabel Castillo
@@ -63,7 +63,7 @@ class Isa_EDD_Related_Downloads{
 
 
 	function load_textdomain() {
-		load_plugin_textdomain( 'edd-related-downloads', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+		load_plugin_textdomain( 'easy-digital-downloads-related-downloads', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 	}
 
 	/**
@@ -76,47 +76,47 @@ class Isa_EDD_Related_Downloads{
 		$isa_eddrd_settings = array(
 			array(
 				'id' => 'isa_eddrd_settings',
-				'name' => '<h3 class="title">'. __('Related Downloads Settings', 'edd-related-downloads') . '</h3>',
-				'desc' => __( 'Settings for EDD Related Downloads Plugin.', 'edd-related-downloads'),
+				'name' => '<h3 class="title">'. __('Related Downloads Settings', 'easy-digital-downloads-related-downloads') . '</h3>',
+				'desc' => __( 'Settings for EDD Related Downloads Plugin.', 'easy-digital-downloads-related-downloads'),
 				'type' => 'header'
 			),
 			array(
 				'id' => 'related_filter_by_cat',
-				'name' => __('Filter related downloads by category:', 'edd-related-downloads'), 
-				'desc' => __( 'Check this to filter by category. By default, downloads are related by tag.', 'edd-related-downloads'),
+				'name' => __('Filter related downloads by category:', 'easy-digital-downloads-related-downloads'), 
+				'desc' => __( 'Check this to filter by category. By default, downloads are related by tag.', 'easy-digital-downloads-related-downloads'),
 				'type' => 'checkbox'
 			),
 			array(
 				'id' => 'related_showposts_num',
-				'name' => __('How many related items to show:', 'edd-related-downloads'), 
-				'desc' => __( 'Enter a decent number, like between 1 and 7. Default is 3.', 'edd-related-downloads'),
+				'name' => __('How many related items to show:', 'easy-digital-downloads-related-downloads'), 
+				'desc' => __( 'Enter a decent number, like between 1 and 7. Default is 3.', 'easy-digital-downloads-related-downloads'),
 				'type' => 'text',
 			),
 			array(
 				'id' => 'related_dl_title',
-				'name' => __('Custom Related Downloads Title:', 'edd-related-downloads'), 
-				'desc' => __( 'This appears above the related items. Default is, "You May Also Like".', 'edd-related-downloads'),
+				'name' => __('Custom Related Downloads Title:', 'easy-digital-downloads-related-downloads'), 
+				'desc' => __( 'This appears above the related items. Default is, "You May Also Like".', 'easy-digital-downloads-related-downloads'),
 				'type' => 'text'
 			),
 
 			array(
 				'id' => 'disable_related_in_content',
-				'name' => __('Disable Related Downloads Added To Content:', 'edd-related-downloads'), 
-				'desc' => __( 'Check this to stop the them from being added to the bottom of the single download content. Useful if you are using the sidebar widget instead. Or you could leave this in, set to category, and the widget set to tags, or vice-versa.', 'edd-related-downloads'),
+				'name' => __('Disable Related Downloads Added To Content:', 'easy-digital-downloads-related-downloads'), 
+				'desc' => __( 'Check this to stop the them from being added to the bottom of the single download content. Useful if you are using the sidebar widget instead. Or you could leave this in, set to category, and the widget set to tags, or vice-versa.', 'easy-digital-downloads-related-downloads'),
 				'type' => 'checkbox'
 			),
 
 array(
 				'id' => 'related_dl_orderby',
-				'name' => __('Change The Default Method of Sorting (Orderby)', 'edd-related-downloads'), 
-				'desc' => __( 'Choose what the related downloads are sorted by. Default is by "date".', 'edd-related-downloads'),
+				'name' => __('Change The Default Method of Sorting (Orderby)', 'easy-digital-downloads-related-downloads'), 
+				'desc' => __( 'Choose what the related downloads are sorted by. Default is by "date".', 'easy-digital-downloads-related-downloads'),
 				'type' => 'select',
 				'options' => array('date' => 'date','ID' => 'ID','author' => 'author','title' => 'title','name' => 'name (post slug)','modified' => 'modified (last modified date)','parent' => 'parent','rand' => 'random','comment_count' => 'comment_count')
 			),
 array(
 				'id' => 'related_dl_order',
-				'name' => __('Change The Default Sort Order', 'edd-related-downloads'), 
-				'desc' => __( 'Choose the default sort order for the related downloads. Default is "DESC".', 'edd-related-downloads'),
+				'name' => __('Change The Default Sort Order', 'easy-digital-downloads-related-downloads'), 
+				'desc' => __( 'Choose the default sort order for the related downloads. Default is "DESC".', 'easy-digital-downloads-related-downloads'),
 				'type' => 'select',
 				'options' => array('DESC' => 'DESC','ASC' => 'ASC')
 			),
@@ -152,7 +152,7 @@ array(
 								isset( $edd_options['related_dl_title'] ) && 
 								( '' != $edd_options['related_dl_title'] )
 							)
-							? $edd_options['related_dl_title'] : __('You May Also Like', 'edd-related-downloads');
+							? $edd_options['related_dl_title'] : __('You May Also Like', 'easy-digital-downloads-related-downloads');
 
 $loop_orderby = isset( $edd_options['related_dl_orderby'] ) ? $edd_options['related_dl_orderby'] : 'date';
 
