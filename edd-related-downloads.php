@@ -53,7 +53,7 @@ class Isa_EDD_Related_Downloads{
 
     }
 
-   	public function enqueue() {
+   	function enqueue() {
 			
 		if ( is_singular( 'download' ) ) {
 	            wp_register_style('edd-related-downloads', plugins_url('/edd-related-downloads.css', __FILE__));
@@ -62,7 +62,7 @@ class Isa_EDD_Related_Downloads{
 	}
 
 
-	public function load_textdomain() {
+	function load_textdomain() {
 		load_plugin_textdomain( 'edd-related-downloads', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 	}
 
@@ -71,7 +71,7 @@ class Isa_EDD_Related_Downloads{
 	 *
 	 * @since 1.0
 	 */
-	public function isa_eddrd_add_settings( $settings ) {
+	function isa_eddrd_add_settings( $settings ) {
 	
 		$isa_eddrd_settings = array(
 			array(
@@ -135,7 +135,7 @@ array(
 	 * @since 0.1
 	 */
 
-	public function isa_after_download_content() {
+	function isa_after_download_content() {
 	    global $post, $data, $edd_options;
 	// Compatibility fix for EDD Hide Download: save the current download's post id, in order to exclude it later
 		$exclude_post_id = $post->ID;
