@@ -27,11 +27,22 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 if(!class_exists('Isa_EDD_Related_Downloads')) {
 class Isa_EDD_Related_Downloads{
-    public function __construct() {
+
+
+	private static $instance = null;
+
+	public static function get_instance() {
+		if ( null == self::$instance ) {
+			self::$instance = new self;
+		}
+		return self::$instance;
+	}
+
+	private function __construct() {
 
 		add_action( 'edd_after_download_content', array( $this, 'isa_after_download_content' ), 120 );
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue' ) );
-	    	add_action( 'plugins_loaded', array( $this, 'load_textdomain' ) );
+	    add_action( 'plugins_loaded', array( $this, 'load_textdomain' ) );
 		add_filter( 'edd_settings_extensions', array( $this, 'isa_eddrd_add_settings' ) );
 		add_action( 'widgets_init', array( $this, 'register_widgets' ) );
 		add_filter('plugin_row_meta', array( $this, 'docs_link' ), 10, 2);
@@ -60,7 +71,7 @@ class Isa_EDD_Related_Downloads{
 	 *
 	 * @since 1.0
 	 */
-	function isa_eddrd_add_settings( $settings ) {
+	public function isa_eddrd_add_settings( $settings ) {
 	
 		$isa_eddrd_settings = array(
 			array(
@@ -215,4 +226,4 @@ $loop_order = isset( $edd_options['related_dl_order'] ) ? $edd_options['related_
 
 }
 }
-$Isa_EDD_Related_Downloads = new Isa_EDD_Related_Downloads();
+$Isa_EDD_Related_Downloads = Isa_EDD_Related_Downloads::get_instance();
