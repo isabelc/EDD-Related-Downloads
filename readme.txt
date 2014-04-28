@@ -37,15 +37,9 @@ This plugin has 6 optional settings. These options are located at `Downloads -->
 For more info, see the [Documentation](http://isabelcastillo.com/docs/category/easy-digital-downloads-related-downloads-wordpress-plugin).
 
 
-**Languages**
+**Translations**
 
-Includes `.mo` and `.po` files for these languages:
-
-- French
-- Portuguese
-- Spanish
-
-It also includes a `.pot` file so you can easily translate into other languages.
+Includes a `.pot` file so you can easily translate into other languages.
 
 
 For support or to report bugs, use the support forum link above, or use [GitHub](https://github.com/isabelc/EDD-Related-Downloads). Forking welcome.
@@ -105,11 +99,10 @@ Please [rate the plugin](http://wordpress.org/support/view/plugin-reviews/easy-d
 == Changelog ==
 
 = 1.5.1 = 
-* New: the textdomain for translations has changed to the plugin slug in order to meet WordPress standards. You must update your .mo and .po filenames with the new textdomain - easy-digital-downloads-related-downloads_
+* New: the textdomain for translations has changed to the plugin slug in order to meet WordPress standards. You must update your .mo and .po filenames with the new textdomain - easy-digital-downloads-related-downloads_. Old .mo and .po language files have been removed.
 * New: moved the settings from the "Downloads -> Misc" tab to "Downoads -> Extenstions" tab.
 * New: added width and height attributes to related images for increased page loading speed.
 * New: singleton class.
-* Maintenance: updated .pot file and translation files.
 * Maintenance: Tested and passed for WP 3.9 compatibility.
 
 = 1.5 =
