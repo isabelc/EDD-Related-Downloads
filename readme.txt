@@ -105,8 +105,9 @@ Please [rate the plugin](http://wordpress.org/support/view/plugin-reviews/easy-d
 == Changelog ==
 
 = 1.5.1 = 
-* New: the textdomain for translations has changed to the plugin slug in order to meet WordPress standards. You must update your .mo and .po files with the new textdomain - easy-digital-downloads-related-downloads_
+* New: the textdomain for translations has changed to the plugin slug in order to meet WordPress standards. You must update your .mo and .po filenames with the new textdomain - easy-digital-downloads-related-downloads_
 * New: moved the settings from the "Downloads -> Misc" tab to "Downoads -> Extenstions" tab.
+* New: added width and height attributes to related images for increased page loading speed.
 * New: singleton class.
 * Maintenance: updated .pot file and translation files.
 * Maintenance: Tested and passed for WP 3.9 compatibility.
