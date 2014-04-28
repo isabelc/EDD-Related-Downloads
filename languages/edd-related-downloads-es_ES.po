@@ -1,0 +1,121 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: EDD Related Downloads\n"
+"POT-Creation-Date: 2014-03-17 09:05-0500\n"
+"PO-Revision-Date: 2014-03-17 09:09-0500\n"
+"Last-Translator: \n"
+"Language-Team: IC <isabel@isabelcastillo.com>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.3\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: C:\\Users\\Isabel\\Documents\\WP-Plugins\\easy-"
+"digital-downloads-related-downloads\\trunk\n"
+
+#: C:\Users\Isabel\Documents\my_web_sites\chema\wp-content\plugins\Edd-Related-Downloads/edd-related-downloads.php:68
+msgid "Related Downloads Settings"
+msgstr "Ajustes para Descargas relacionadas"
+
+#: C:\Users\Isabel\Documents\my_web_sites\chema\wp-content\plugins\Edd-Related-Downloads/edd-related-downloads.php:69
+msgid "Settings for EDD Related Downloads Plugin."
+msgstr "Ajustes para EDD Descargas Programas Relacionados."
+
+#: C:\Users\Isabel\Documents\my_web_sites\chema\wp-content\plugins\Edd-Related-Downloads/edd-related-downloads.php:74
+msgid "Filter related downloads by category:"
+msgstr "Filtrar descargas relacionadas por categoría:"
+
+#: C:\Users\Isabel\Documents\my_web_sites\chema\wp-content\plugins\Edd-Related-Downloads/edd-related-downloads.php:75
+msgid ""
+"Check this to filter by category. By default, downloads are related by tag."
+msgstr ""
+"Active esta opción para filtrar por categoría. Por defecto, las descargas "
+"están relacionados por tag."
+
+#: C:\Users\Isabel\Documents\my_web_sites\chema\wp-content\plugins\Edd-Related-Downloads/edd-related-downloads.php:80
+msgid "How many related items to show:"
+msgstr "¿Cuántos artículos relacionados a demostrar:"
+
+#: C:\Users\Isabel\Documents\my_web_sites\chema\wp-content\plugins\Edd-Related-Downloads/edd-related-downloads.php:81
+msgid "Enter a decent number, like between 1 and 7. Default is 3."
+msgstr ""
+"Introduzca un número decente, al igual que entre el 1 y el 7. El valor "
+"predeterminado es 3."
+
+#: C:\Users\Isabel\Documents\my_web_sites\chema\wp-content\plugins\Edd-Related-Downloads/edd-related-downloads.php:86
+msgid "Custom Related Downloads Title:"
+msgstr "Custom Descargas Relacionadas Título:"
+
+#: C:\Users\Isabel\Documents\my_web_sites\chema\wp-content\plugins\Edd-Related-Downloads/edd-related-downloads.php:87
+msgid ""
+"This appears above the related items. Default is, \"You May Also Like\"."
+msgstr ""
+"Esto aparece por encima de los elementos relacionados. El valor "
+"predeterminado es, También le gustará."
+
+#: C:\Users\Isabel\Documents\my_web_sites\chema\wp-content\plugins\Edd-Related-Downloads/edd-related-downloads.php:93
+msgid "Disable Related Downloads Added To Content:"
+msgstr "Desactivar Descargas Relacionadas Añadido al Contenido"
+
+#: C:\Users\Isabel\Documents\my_web_sites\chema\wp-content\plugins\Edd-Related-Downloads/edd-related-downloads.php:94
+msgid ""
+"Check this to stop the them from being added to the bottom of the single "
+"download content. Useful if you are using the sidebar widget instead. Or you "
+"could leave this in, set to category, and the widget set to tags, or vice-"
+"versa."
+msgstr ""
+"Active esta opción para detener el que se agreguen a la parte inferior de la "
+"descarga de contenido único. Útil si usted está utilizando el widget barra "
+"lateral en su lugar. O puede dejar esto en, ajustado a la categoría, y el "
+"conjunto de widgets de etiquetas, o vice-versa."
+
+#: C:\Users\Isabel\Documents\my_web_sites\chema\wp-content\plugins\Edd-Related-Downloads/edd-related-downloads.php:100
+msgid "Change The Default Method of Sorting (Orderby)"
+msgstr "Cambiar el método de clasificación"
+
+#: C:\Users\Isabel\Documents\my_web_sites\chema\wp-content\plugins\Edd-Related-Downloads/edd-related-downloads.php:101
+msgid ""
+"Choose what the related downloads are sorted by. Default is by \"date\"."
+msgstr ""
+"Elija lo que las descargas relacionadas están ordenados por. El valor "
+"predeterminado es de \"fecha\"."
+
+#: C:\Users\Isabel\Documents\my_web_sites\chema\wp-content\plugins\Edd-Related-Downloads/edd-related-downloads.php:107
+msgid "Change The Default Sort Order"
+msgstr "Cambie el valor predeterminado Orden de Clasificación"
+
+#: C:\Users\Isabel\Documents\my_web_sites\chema\wp-content\plugins\Edd-Related-Downloads/edd-related-downloads.php:108
+msgid ""
+"Choose the default sort order for the related downloads. Default is \"DESC\"."
+msgstr ""
+"Seleccione el orden de clasificación por defecto para las descargas "
+"relacionadas. Por defecto es descendiente (\"DESC\")."
+
+#: C:\Users\Isabel\Documents\my_web_sites\chema\wp-content\plugins\Edd-Related-Downloads/edd-related-downloads.php:144
+msgid "You May Also Like"
+msgstr "También te puede interesar"
+
+#: C:\Users\Isabel\Documents\my_web_sites\chema\wp-content\plugins\Edd-Related-Downloads/widget-edd-related.php:14
+msgid "EDD Related Downloads by Isa"
+msgstr "Descargas EDD relacionados por Isa"
+
+#: C:\Users\Isabel\Documents\my_web_sites\chema\wp-content\plugins\Edd-Related-Downloads/widget-edd-related.php:15
+msgid "Display related downloads."
+msgstr "Visualizar descargas relacionadas."
+
+#: C:\Users\Isabel\Documents\my_web_sites\chema\wp-content\plugins\Edd-Related-Downloads/widget-edd-related.php:129
+msgid "Title:"
+msgstr "Título:"
+
+#: C:\Users\Isabel\Documents\my_web_sites\chema\wp-content\plugins\Edd-Related-Downloads/widget-edd-related.php:131
+msgid "How many related downloads to show: "
+msgstr "¿Cuántas descargas relacionadas a demostrar:"
+
+#: C:\Users\Isabel\Documents\my_web_sites\chema\wp-content\plugins\Edd-Related-Downloads/widget-edd-related.php:133
+msgid " Filter By Category Instead of Tag"
+msgstr "Filtrar por Categoría vez de Tag"
+
+#~ msgid "EDD Related Downloads Widget"
+#~ msgstr "EDD Descargas Relacionadas Widget"
