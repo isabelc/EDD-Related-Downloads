@@ -1,10 +1,10 @@
-﻿=== Easy Digital Downloads - Related Downloads ===
+=== Easy Digital Downloads - Related Downloads ===
 Contributors: isabel104
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=me%40isabelcastillo%2ecom
 Tags: EDD, related downloads, easy digital downloads, related posts, download category, download tag, downloads categories, downloads tags, related items, related products
-Requires at least: 3.3
-Tested up to: 3.9
-Stable Tag: 1.5.1
+Requires at least: 3.8
+Tested up to: 4.0
+Stable Tag: 1.6
 License: GNU Version 2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -98,6 +98,10 @@ Please [rate the plugin](http://wordpress.org/support/view/plugin-reviews/easy-d
 
 == Changelog ==
 
+= 1.6 =
+* Maintenance - updated widget args to work with the WordPress 4.0 live widget customizer.
+* Maintenance - Removed several PHP warning notices.
+
 = 1.5.1 = 
 * New: the textdomain for translations has changed to the plugin slug in order to meet WordPress standards. You must update your .mo and .po filenames with the new textdomain - easy-digital-downloads-related-downloads_. Old .mo and .po language files have been removed.
 * New: moved the settings from the "Downloads -> Misc" tab to "Downoads -> Extenstions" tab.
@@ -169,6 +173,9 @@ Please [rate the plugin](http://wordpress.org/support/view/plugin-reviews/easy-d
 * Initial release.
 
 == Upgrade Notice ==
+
+= 1.6 =
+Updated widget to work with the WordPress 4.0 live widget customizer.
 
 = 1.4.7 =
 Tweak: Gave late priority to related downloads action to ensure that related items proceed after any other inserted stuff by other plugins.
