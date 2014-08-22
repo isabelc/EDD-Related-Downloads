@@ -3,7 +3,7 @@
 Plugin Name: Easy Digital Downloads - Related Downloads
 Plugin URI: http://isabelcastillo.com/docs/category/easy-digital-downloads-related-downloads-wordpress-plugin
 Description: Show related downloads by tag or category when using Easy Digital Downloads plugin.
-Version: 1.5.1
+Version: 1.6
 Author: Isabel Castillo
 Author URI: http://isabelcastillo.com
 License: GPL2
@@ -28,7 +28,6 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 if(!class_exists('Isa_EDD_Related_Downloads')) {
 class Isa_EDD_Related_Downloads{
 
-
 	private static $instance = null;
 
 	public static function get_instance() {
@@ -39,7 +38,6 @@ class Isa_EDD_Related_Downloads{
 	}
 
 	private function __construct() {
-
 		add_action( 'edd_after_download_content', array( $this, 'isa_after_download_content' ), 120 );
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue' ) );
 	    add_action( 'plugins_loaded', array( $this, 'load_textdomain' ) );
@@ -50,17 +48,14 @@ class Isa_EDD_Related_Downloads{
 		if( ! defined( 'EDDRD_PLUGIN_DIR' ) )
 			define( 'EDDRD_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 		require_once EDDRD_PLUGIN_DIR . 'widget-edd-related.php';
-
     }
 
    	function enqueue() {
-			
 		if ( is_singular( 'download' ) ) {
-	            wp_register_style('edd-related-downloads', plugins_url('/edd-related-downloads.css', __FILE__));
-	            wp_enqueue_style('edd-related-downloads');
+            wp_register_style('edd-related-downloads', plugins_url('/edd-related-downloads.css', __FILE__));
+            wp_enqueue_style('edd-related-downloads');
 		}
 	}
-
 
 	function load_textdomain() {
 		load_plugin_textdomain( 'easy-digital-downloads-related-downloads', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
@@ -68,7 +63,6 @@ class Isa_EDD_Related_Downloads{
 
 	/**
 	 * Add settings to the "Easy Digital Downloads > Settings > Misc" section
-	 *
 	 * @since 1.0
 	 */
 	function isa_eddrd_add_settings( $settings ) {
@@ -120,18 +114,14 @@ array(
 				'type' => 'select',
 				'options' => array('DESC' => 'DESC','ASC' => 'ASC')
 			),
-
-
 		);
 	
 		/* Merge plugin settings with original EDD settings */
 		return array_merge( $settings, $isa_eddrd_settings );
-
 	}
 
 	/**
 	 * Adds related items on the single download page, underneath content
-	 *
 	 * @since 0.1
 	 */
 
@@ -154,36 +144,35 @@ array(
 							)
 							? $edd_options['related_dl_title'] : __('You May Also Like', 'easy-digital-downloads-related-downloads');
 
-$loop_orderby = isset( $edd_options['related_dl_orderby'] ) ? $edd_options['related_dl_orderby'] : 'date';
+		$loop_orderby = isset( $edd_options['related_dl_orderby'] ) ? $edd_options['related_dl_orderby'] : 'date';
 
-$loop_order = isset( $edd_options['related_dl_order'] ) ? $edd_options['related_dl_order'] : 'DESC';
-
-	    $args = array(
-				'post_type' => 'download',
-	            'post__not_in' => array($post->ID),
-	            'showposts' => $howmany,
-				'tax_query' => array(
-						array(
-							'taxonomy' => $taxchoice,
-							'field' => 'id',
-							'terms' => $custom_taxterms
-						)
-					),
-'orderby' => $loop_orderby,
-'order' => $loop_order
-	    );
+		$loop_order = isset( $edd_options['related_dl_order'] ) ? $edd_options['related_dl_order'] : 'DESC';
+		
+		if ( ! empty($custom_taxterms) ) {
+			$args = array(
+					'post_type' => 'download',
+					'post__not_in' => array($post->ID),
+					'showposts' => $howmany,
+					'tax_query' => array(
+							array(
+								'taxonomy' => $taxchoice,
+								'field' => 'id',
+								'terms' => $custom_taxterms
+							)
+						),
+					'orderby' => $loop_orderby,
+					'order' => $loop_order
+			);
 	 
-		$eddrd_query = new WP_Query($args);
-
-		$go = isset( $edd_options['disable_related_in_content'] ) ? '' : 'go';
-
+			$eddrd_query = new WP_Query($args);
+			$go = isset( $edd_options['disable_related_in_content'] ) ? '' : 'go';
            
-		if( $eddrd_query->have_posts() && $go  ) { ?>
-		<div id="isa-related-downloads"><h3><?php echo $related_dl_title; ?></h3><ul>
-		<?php while ($eddrd_query->have_posts()) {
-	                $eddrd_query->the_post();
-			if ($post->ID == $exclude_post_id) continue;
-			if(has_post_thumbnail()) {
+			if( $eddrd_query->have_posts() && $go  ) { ?>
+			<div id="isa-related-downloads"><h3><?php echo $related_dl_title; ?></h3><ul>
+			<?php while ($eddrd_query->have_posts()) {
+					$eddrd_query->the_post();
+					if ($post->ID == $exclude_post_id) continue;
+					if(has_post_thumbnail()) {
 						$thumb = wp_get_attachment_image_src( get_post_thumbnail_id(), 'thumbnail' );
 						$thumbsrc = $thumb[0];
 					}
@@ -192,15 +181,15 @@ $loop_order = isset( $edd_options['related_dl_order'] ) ? $edd_options['related_
 						<a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">
 							<?php if(has_post_thumbnail()) { ?><img class="wp-post-image" alt="<?php the_title_attribute(); ?>" src="<?php echo apply_filters( 'edd_related_downloads_image_src', $thumbsrc, $post ); ?>" width="<?php echo $thumb[1]; ?>" height="<?php echo $thumb[2]; ?>" /><br /><?php } 
 
-	echo strip_tags( the_title('','', false) ); ?>
+							echo strip_tags( the_title('','', false) ); ?>
 						</a>
 					</li>
-          <?php } ?>
-          </ul></div>
-		<?php wp_reset_query();
+			<?php } ?>
+			</ul></div>
+			<?php wp_reset_query();
 			}
+		}
 	}
-
 	
 	/** 
 	 * Registers the EDD Related Downloads Widget.
@@ -210,7 +199,6 @@ $loop_order = isset( $edd_options['related_dl_order'] ) ? $edd_options['related_
 		register_widget( 'edd_related_downloads_widget' );
 	}
 
-	
 	/**
 	* Link to Documentation
 	* @since 1.4.8
@@ -222,7 +210,6 @@ $loop_order = isset( $edd_options['related_dl_order'] ) ? $edd_options['related_
 		}
 		return $links;
 	}
-
 
 }
 }
