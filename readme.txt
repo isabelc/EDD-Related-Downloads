@@ -12,8 +12,6 @@ Automatically show related downloads by tag or category when using Easy Digital 
 
 == Description ==
 
-**New since 1.5: option to choose sort order and orderby parameters.**
-
 This is an extension for [Easy Digital Downloads](http://wordpress.org/plugins/easy-digital-downloads/) that automatically adds related downloads after the single download content on the single download page. It is simple and light. It works by default without a need for any settings. By default, 3 related downloads will be shown, related by download_tag. The title and featured image will be displayed, centered nicely. The related downloads are added right below the content of the single download.
 
 **Optional - use it as widget**
@@ -36,20 +34,23 @@ This plugin has 6 optional settings. These options are located at `Downloads -->
 
 For more info, see the [Documentation](http://isabelcastillo.com/docs/category/easy-digital-downloads-related-downloads-wordpress-plugin).
 
+For support or to report bugs, use the support forum link above.
+
+Fork on [GitHub](https://github.com/isabelc/EDD-Related-Downloads).
+
+Please [rate the plugin](http://wordpress.org/support/view/plugin-reviews/easy-digital-downloads-related-downloads). Thank you.
 
 **Translations**
 
 Includes a `.pot` file so you can easily translate into other languages.
 
 
-For support or to report bugs, use the support forum link above, or use [GitHub](https://github.com/isabelc/EDD-Related-Downloads). Forking welcome.
-
 
 == Installation ==
 
 1. Unzip `easy-digital-downloads-related-downloads.zip` directly into the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress. That's it. At this point, related downloads, if any, will appear underneath each download.
-3. Optional: Go to `Downloads --> Settings --> Misc tab` to change the default settings.
+3. Optional: Go to `Downloads --> Settings --> Extensions tab` to change the default settings.
 4. Optional: Use the widget at `Appearances --> Widgets`.
 
 == Frequently Asked Questions ==
@@ -89,12 +90,13 @@ However, the 2 above will style it just like the sidebar widget, which is list-s
 `
 
 
-= How can I give back? =
+= Can I use custom images instead of the featured image for the Related Downloads? = 
 
-Please [rate the plugin](http://wordpress.org/support/view/plugin-reviews/easy-digital-downloads-related-downloads). Thank you.
+Yes, [see this](http://isabelcastillo.com/docs/use-custom-images-instead-of-featured-image-for-related-downloads).
+
 == Screenshots ==
 
-1. Settings at Downloads -> Settings -> Misc tab
+1. Settings at Downloads -> Settings -> Extensions tab
 
 == Changelog ==
 
