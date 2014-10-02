@@ -1,10 +1,10 @@
 ﻿=== Easy Digital Downloads - Related Downloads ===
-Contributors: isabel104
+Contributors: isabel104, eliorivero
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=me%40isabelcastillo%2ecom
 Tags: EDD, related downloads, easy digital downloads, related posts, download category, download tag, downloads categories, downloads tags, related items, related products
 Requires at least: 3.8
 Tested up to: 4.0
-Stable Tag: 1.6
+Stable Tag: 1.6.1
 License: GNU Version 2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -89,6 +89,9 @@ However, the 2 above will style it just like the sidebar widget, which is list-s
 	the_widget('edd_related_downloads_widget', $inst, $args);
 `
 
+= Can I use a custom image size for the featured image? =
+
+Yes, [see this](http://isabelcastillo.com/docs/different-size-featured-image-edd-related-downloads)
 
 = Can I use custom images instead of the featured image for the Related Downloads? = 
 
@@ -99,6 +102,10 @@ Yes, [see this](http://isabelcastillo.com/docs/use-custom-images-instead-of-feat
 1. Settings at Downloads -> Settings -> Extensions tab
 
 == Changelog ==
+
+= 1.6.1 =
+* New - A new filter, edd_related_downloads_image_size, lets you modify the image size retrieved for the featured image. Thanks to eliorivero.
+* New - Checks if the image URL has the correct scheme in SSL environments. Thanks to eliorivero.
 
 = 1.6 =
 * Maintenance - updated widget args to work with the WordPress 4.0 live widget customizer.
@@ -175,6 +182,9 @@ Yes, [see this](http://isabelcastillo.com/docs/use-custom-images-instead-of-feat
 * Initial release.
 
 == Upgrade Notice ==
+
+= 1.6.1 =
+Adds new image size filter and checks for ssl.
 
 = 1.6 =
 Updated widget to work with the WordPress 4.0 live widget customizer.

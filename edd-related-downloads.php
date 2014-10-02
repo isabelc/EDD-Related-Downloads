@@ -3,7 +3,7 @@
 Plugin Name: Easy Digital Downloads - Related Downloads
 Plugin URI: http://isabelcastillo.com/docs/category/easy-digital-downloads-related-downloads-wordpress-plugin
 Description: Show related downloads by tag or category when using Easy Digital Downloads plugin.
-Version: 1.6.1-beta2
+Version: 1.6.1
 Author: Isabel Castillo
 Author URI: http://isabelcastillo.com
 License: GPL2
@@ -40,7 +40,7 @@ class Isa_EDD_Related_Downloads{
 	private function __construct() {
 		add_action( 'edd_after_download_content', array( $this, 'isa_after_download_content' ), 120 );
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue' ) );
-	    add_action( 'plugins_loaded', array( $this, 'load_textdomain' ) );
+		add_action( 'plugins_loaded', array( $this, 'load_textdomain' ) );
 		add_filter( 'edd_settings_extensions', array( $this, 'isa_eddrd_add_settings' ) );
 		add_action( 'widgets_init', array( $this, 'register_widgets' ) );
 		add_filter('plugin_row_meta', array( $this, 'docs_link' ), 10, 2);

@@ -8,13 +8,7 @@ It is simple and light. It works by default without a need for any settings. By 
 
 **Languages**
 
-Includes `.mo` and `.po` files for these languages:
-
-- French
-- Portuguese
-- Spanish
-
-It also includes a `.pot` file so you can easily translate into other languages.
+It includes a `.pot` file so you can easily translate into other languages.
 
 
 Download the plugin from WordPress: [EDD - Related Downloads](http://wordpress.org/plugins/easy-digital-downloads-related-downloads/)
