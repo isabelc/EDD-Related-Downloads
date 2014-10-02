@@ -68,8 +68,8 @@ class edd_related_downloads_widget extends WP_Widget {
 						if ($post->ID == $exclude_post_id)
 							continue;
 						if(has_post_thumbnail()) {
-							$thumb = wp_get_attachment_image_src( get_post_thumbnail_id(), 'thumbnail' );
-							$thumbsrc = $thumb[0];
+							$thumb = wp_get_attachment_image_src( get_post_thumbnail_id(), apply_filters( 'edd_related_downloads_image_size', 'thumbnail' ) );
+							$thumbsrc = is_ssl() ? str_replace( 'http://', 'https://', $thumb[0] ) : $thumb[0];
 						} ?>
 						<li>
 							<a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">
