@@ -1,0 +1,107 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: EDD Related Downloads\n"
+"POT-Creation-Date: 2014-04-28 17:52-0500\n"
+"PO-Revision-Date: 2014-04-28 17:52-0500\n"
+"Last-Translator: \n"
+"Language-Team: Isabel Castillo <isabel@isabelcastillo.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.3\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e;_x\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: C:\\Users\\Isabel\\sites\\anab4557@chemacastillo.com"
+"\\home\\content\\06\\11917606\\html\\wp-content\\plugins\\EDD-Related-"
+"Downloads-work\n"
+
+#: C:\Users\Isabel\sites\anab4557@chemacastillo.com\home\content\06\11917606\html\wp-content\plugins\EDD-Related-Downloads-work/edd-related-downloads.php:79
+msgid "Related Downloads Settings"
+msgstr ""
+
+#: C:\Users\Isabel\sites\anab4557@chemacastillo.com\home\content\06\11917606\html\wp-content\plugins\EDD-Related-Downloads-work/edd-related-downloads.php:80
+msgid "Settings for EDD Related Downloads Plugin."
+msgstr ""
+
+#: C:\Users\Isabel\sites\anab4557@chemacastillo.com\home\content\06\11917606\html\wp-content\plugins\EDD-Related-Downloads-work/edd-related-downloads.php:85
+msgid "Filter related downloads by category:"
+msgstr ""
+
+#: C:\Users\Isabel\sites\anab4557@chemacastillo.com\home\content\06\11917606\html\wp-content\plugins\EDD-Related-Downloads-work/edd-related-downloads.php:86
+msgid ""
+"Check this to filter by category. By default, downloads are related by tag."
+msgstr ""
+
+#: C:\Users\Isabel\sites\anab4557@chemacastillo.com\home\content\06\11917606\html\wp-content\plugins\EDD-Related-Downloads-work/edd-related-downloads.php:91
+msgid "How many related items to show:"
+msgstr ""
+
+#: C:\Users\Isabel\sites\anab4557@chemacastillo.com\home\content\06\11917606\html\wp-content\plugins\EDD-Related-Downloads-work/edd-related-downloads.php:92
+msgid "Enter a decent number, like between 1 and 7. Default is 3."
+msgstr ""
+
+#: C:\Users\Isabel\sites\anab4557@chemacastillo.com\home\content\06\11917606\html\wp-content\plugins\EDD-Related-Downloads-work/edd-related-downloads.php:97
+msgid "Custom Related Downloads Title:"
+msgstr ""
+
+#: C:\Users\Isabel\sites\anab4557@chemacastillo.com\home\content\06\11917606\html\wp-content\plugins\EDD-Related-Downloads-work/edd-related-downloads.php:98
+msgid ""
+"This appears above the related items. Default is, \"You May Also Like\"."
+msgstr ""
+
+#: C:\Users\Isabel\sites\anab4557@chemacastillo.com\home\content\06\11917606\html\wp-content\plugins\EDD-Related-Downloads-work/edd-related-downloads.php:104
+msgid "Disable Related Downloads Added To Content:"
+msgstr ""
+
+#: C:\Users\Isabel\sites\anab4557@chemacastillo.com\home\content\06\11917606\html\wp-content\plugins\EDD-Related-Downloads-work/edd-related-downloads.php:105
+msgid ""
+"Check this to stop the them from being added to the bottom of the single "
+"download content. Useful if you are using the sidebar widget instead. Or you "
+"could leave this in, set to category, and the widget set to tags, or vice-"
+"versa."
+msgstr ""
+
+#: C:\Users\Isabel\sites\anab4557@chemacastillo.com\home\content\06\11917606\html\wp-content\plugins\EDD-Related-Downloads-work/edd-related-downloads.php:111
+msgid "Change The Default Method of Sorting (Orderby)"
+msgstr ""
+
+#: C:\Users\Isabel\sites\anab4557@chemacastillo.com\home\content\06\11917606\html\wp-content\plugins\EDD-Related-Downloads-work/edd-related-downloads.php:112
+msgid ""
+"Choose what the related downloads are sorted by. Default is by \"date\"."
+msgstr ""
+
+#: C:\Users\Isabel\sites\anab4557@chemacastillo.com\home\content\06\11917606\html\wp-content\plugins\EDD-Related-Downloads-work/edd-related-downloads.php:118
+msgid "Change The Default Sort Order"
+msgstr ""
+
+#: C:\Users\Isabel\sites\anab4557@chemacastillo.com\home\content\06\11917606\html\wp-content\plugins\EDD-Related-Downloads-work/edd-related-downloads.php:119
+msgid ""
+"Choose the default sort order for the related downloads. Default is \"DESC\"."
+msgstr ""
+
+#: C:\Users\Isabel\sites\anab4557@chemacastillo.com\home\content\06\11917606\html\wp-content\plugins\EDD-Related-Downloads-work/edd-related-downloads.php:155
+msgid "You May Also Like"
+msgstr ""
+
+#: C:\Users\Isabel\sites\anab4557@chemacastillo.com\home\content\06\11917606\html\wp-content\plugins\EDD-Related-Downloads-work/widget-edd-related.php:14
+msgid "EDD Related Downloads by Isa"
+msgstr ""
+
+#: C:\Users\Isabel\sites\anab4557@chemacastillo.com\home\content\06\11917606\html\wp-content\plugins\EDD-Related-Downloads-work/widget-edd-related.php:15
+msgid "Display related downloads."
+msgstr ""
+
+#: C:\Users\Isabel\sites\anab4557@chemacastillo.com\home\content\06\11917606\html\wp-content\plugins\EDD-Related-Downloads-work/widget-edd-related.php:129
+msgid "Title:"
+msgstr ""
+
+#: C:\Users\Isabel\sites\anab4557@chemacastillo.com\home\content\06\11917606\html\wp-content\plugins\EDD-Related-Downloads-work/widget-edd-related.php:131
+msgid "How many related downloads to show: "
+msgstr ""
+
+#: C:\Users\Isabel\sites\anab4557@chemacastillo.com\home\content\06\11917606\html\wp-content\plugins\EDD-Related-Downloads-work/widget-edd-related.php:133
+msgid " Filter By Category Instead of Tag"
+msgstr ""
