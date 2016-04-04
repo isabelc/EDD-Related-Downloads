@@ -73,8 +73,10 @@ class edd_related_downloads_widget extends WP_Widget {
 						} ?>
 						<li>
 							<a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">
-								<?php if(has_post_thumbnail()) { ?><img class="wp-post-image" alt="<?php the_title_attribute(); ?>" src="<?php echo apply_filters( 'edd_related_downloads_image_src', $thumbsrc, $post ); ?>" width="<?php echo $thumb[1]; ?>" height="<?php echo $thumb[2]; ?>" /><?php } ?>
-								<p><?php echo strip_tags( the_title('','', false) ); ?></p>
+								<?php if(has_post_thumbnail()) { ?><img class="wp-post-image" alt="<?php the_title_attribute(); ?>" src="<?php echo apply_filters( 'edd_related_downloads_image_src', $thumbsrc, $post ); ?>" width="<?php echo $thumb[1]; ?>" height="<?php echo $thumb[2]; ?>" /><?php } 
+								if ( ! isset( $edd_options['related_dl_only_image'] ) ) { ?>
+									<p><?php echo strip_tags( the_title('','', false) ); ?></p>
+								<?php }// @test  ?>
 							</a>
 						</li>
 					<?php } ?>
@@ -94,7 +96,7 @@ class edd_related_downloads_widget extends WP_Widget {
 		$instance = array();
 		$instance['title'] = strip_tags( $new_instance['title'] );
 		$instance['number'] = strip_tags( $new_instance['number'] );
-		$instance['taxcat'] = $new_instance['taxcat'];
+		$instance['taxcat'] = isset( $new_instance['taxcat'] ) ? $new_instance['taxcat'] : false;
 		return $instance;
 	}
 
