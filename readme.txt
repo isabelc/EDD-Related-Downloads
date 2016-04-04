@@ -23,14 +23,15 @@ It also adds a Related Downloads widget. You can use the widget if you prefer, a
 
 **Works automatically. No settings needed.**
 
-This plugin has 6 optional settings. These options are located at `Downloads --> Settings --> Extensions tab`.
+This plugin has 7 optional settings. These options are located at `Downloads --> Settings --> Extensions tab`.
 
 1. Filter by Tag or Category
-2. Change the number of related items to show
-3. Custom Related Downloads Title
-4. Disable Related Downloads From Being Added to Content
-5. Change The Default Method of Sorting (Orderby)
-6. Change The Default Sort Order
+2. Show only the related image, no title
+3. Change the number of related items to show
+4. Custom Related Downloads Title
+5. Disable Related Downloads From Being Added to Content
+6. Change The Default Method of Sorting (Orderby)
+7. Change The Default Sort Order
 
 For more info, see the [Documentation](http://isabelcastillo.com/docs/category/easy-digital-downloads-related-downloads-wordpress-plugin).
 
