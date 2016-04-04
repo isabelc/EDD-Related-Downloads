@@ -76,7 +76,7 @@ class edd_related_downloads_widget extends WP_Widget {
 								<?php if(has_post_thumbnail()) { ?><img class="wp-post-image" alt="<?php the_title_attribute(); ?>" src="<?php echo apply_filters( 'edd_related_downloads_image_src', $thumbsrc, $post ); ?>" width="<?php echo $thumb[1]; ?>" height="<?php echo $thumb[2]; ?>" /><?php } 
 								if ( ! isset( $edd_options['related_dl_only_image'] ) ) { ?>
 									<p><?php echo strip_tags( the_title('','', false) ); ?></p>
-								<?php }// @test  ?>
+								<?php }  ?>
 							</a>
 						</li>
 					<?php } ?>

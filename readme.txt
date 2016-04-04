@@ -103,6 +103,10 @@ Yes, [see this](http://isabelcastillo.com/docs/use-custom-images-instead-of-feat
 
 == Changelog ==
 
+= 1.7 =
+* New = option to show only the related download image without the title.
+* Tweak = Improved styling. Images are now aligned even if long titles are of uneven lengths.
+
 = 1.6.1 =
 * New - A new filter, edd_related_downloads_image_size, lets you modify the image size retrieved for the featured image. Thanks to eliorivero.
 * New - Checks if the image URL has the correct scheme in SSL environments. Thanks to eliorivero.

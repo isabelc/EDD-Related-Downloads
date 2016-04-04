@@ -81,6 +81,12 @@ class Isa_EDD_Related_Downloads{
 				'type' => 'checkbox'
 			),
 			array(
+				'id' => 'related_dl_only_image',
+				'name' => __('Show only image:', 'easy-digital-downloads-related-downloads'), 
+				'desc' => __( 'Check this to show only the related download image without the title.', 'easy-digital-downloads-related-downloads'),
+				'type' => 'checkbox'
+			),
+			array(
 				'id' => 'related_showposts_num',
 				'name' => __('How many related items to show:', 'easy-digital-downloads-related-downloads'), 
 				'desc' => __( 'Enter a decent number, like between 1 and 7. Default is 3.', 'easy-digital-downloads-related-downloads'),
@@ -138,14 +144,13 @@ array(
 					)
 					? $edd_options['related_showposts_num'] : 3;
 
-		$related_dl_title = ( 
+		$related_dl_title = (
 								isset( $edd_options['related_dl_title'] ) && 
 								( '' != $edd_options['related_dl_title'] )
 							)
-							? $edd_options['related_dl_title'] : __('You May Also Like', 'easy-digital-downloads-related-downloads');
+							? $edd_options['related_dl_title'] : __('You May Also Like', 'easy-digital-downloads-related-downloads');					
 
 		$loop_orderby = isset( $edd_options['related_dl_orderby'] ) ? $edd_options['related_dl_orderby'] : 'date';
-
 		$loop_order = isset( $edd_options['related_dl_order'] ) ? $edd_options['related_dl_order'] : 'DESC';
 		
 		if ( ! empty($custom_taxterms) ) {
@@ -179,9 +184,10 @@ array(
 		            ?>
 	                <li>
 						<a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">
-							<?php if(has_post_thumbnail()) { ?><img class="wp-post-image" alt="<?php the_title_attribute(); ?>" src="<?php echo apply_filters( 'edd_related_downloads_image_src', $thumbsrc, $post ); ?>" width="<?php echo $thumb[1]; ?>" height="<?php echo $thumb[2]; ?>" /><br /><?php } 
-
-							echo strip_tags( the_title('','', false) ); ?>
+							<?php if(has_post_thumbnail()) { ?><img class="wp-post-image" alt="<?php the_title_attribute(); ?>" src="<?php echo apply_filters( 'edd_related_downloads_image_src', $thumbsrc, $post ); ?>" width="<?php echo $thumb[1]; ?>" height="<?php echo $thumb[2]; ?>" /><br /><?php }
+							if ( ! isset( $edd_options['related_dl_only_image'] ) ) {
+								echo strip_tags( the_title('','', false) );
+							} ?>
 						</a>
 					</li>
 			<?php } ?>
