@@ -3,14 +3,14 @@
 Plugin Name: Easy Digital Downloads - Related Downloads
 Plugin URI: http://isabelcastillo.com/docs/category/easy-digital-downloads-related-downloads-wordpress-plugin
 Description: Show related downloads by tag or category when using Easy Digital Downloads plugin.
-Version: 1.6.1
+Version: 1.7
 Author: Isabel Castillo
 Author URI: http://isabelcastillo.com
 License: GPL2
 Text Domain: easy-digital-downloads-related-downloads
 Domain Path: languages
 
-Copyright 2013 - 2014 Isabel Castillo
+Copyright 2013 - 2016 Isabel Castillo
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License, version 2, as 
@@ -98,15 +98,13 @@ class Isa_EDD_Related_Downloads{
 				'desc' => __( 'This appears above the related items. Default is, "You May Also Like".', 'easy-digital-downloads-related-downloads'),
 				'type' => 'text'
 			),
-
 			array(
 				'id' => 'disable_related_in_content',
 				'name' => __('Disable Related Downloads Added To Content:', 'easy-digital-downloads-related-downloads'), 
 				'desc' => __( 'Check this to stop the them from being added to the bottom of the single download content. Useful if you are using the sidebar widget instead. Or you could leave this in, set to category, and the widget set to tags, or vice-versa.', 'easy-digital-downloads-related-downloads'),
 				'type' => 'checkbox'
 			),
-
-array(
+			array(
 				'id' => 'related_dl_orderby',
 				'name' => __('Change The Default Method of Sorting (Orderby)', 'easy-digital-downloads-related-downloads'), 
 				'desc' => __( 'Choose what the related downloads are sorted by. Default is by "date".', 'easy-digital-downloads-related-downloads'),
