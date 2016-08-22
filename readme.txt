@@ -3,7 +3,7 @@ Contributors: isabel104, eliorivero
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=me%40isabelcastillo%2ecom
 Tags: EDD, related downloads, easy digital downloads, related posts, download category, download tag, downloads categories, downloads tags, related items, related products
 Requires at least: 3.8
-Tested up to: 4.5
+Tested up to: 4.6
 Stable tag: 1.7
 License: GNU Version 2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -49,10 +49,11 @@ Includes a `.pot` file so you can easily translate into other languages.
 
 == Installation ==
 
-1. Unzip `easy-digital-downloads-related-downloads.zip` directly into the `/wp-content/plugins/` directory
-2. Activate the plugin through the 'Plugins' menu in WordPress. That's it. At this point, related downloads, if any, will appear underneath each download.
-3. Optional: Go to `Downloads --> Settings --> Extensions tab` to change the default settings.
-4. Optional: Use the widget at `Appearances --> Widgets`.
+1. In your WordPress dashboard, go to "Plugins -> Add New", and search for "Easy Digital Downloads - Related Downloads".
+2. Click to install and then Activate the plugin.
+3. That's it. At this point, related downloads, if any exist, will appear underneath each download.
+4. Optional: Go to `Downloads --> Settings --> Extensions tab` to change the default settings.
+5. Optional: Use the widget at `Appearances --> Widgets`.
 
 == Frequently Asked Questions ==
 
