@@ -40,7 +40,7 @@ class Isa_EDD_Related_Downloads{
 	private function __construct() {
 		add_action( 'edd_after_download_content', array( $this, 'isa_after_download_content' ), 120 );
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue' ) );
-		add_action( 'plugins_loaded', array( $this, 'load_textdomain' ) );
+		add_action( 'init', array( $this, 'load_textdomain' ) );
 		add_filter( 'edd_settings_extensions', array( $this, 'isa_eddrd_add_settings' ) );
 		add_action( 'widgets_init', array( $this, 'register_widgets' ) );
 		add_filter('plugin_row_meta', array( $this, 'docs_link' ), 10, 2);
@@ -58,7 +58,7 @@ class Isa_EDD_Related_Downloads{
 	}
 
 	function load_textdomain() {
-		load_plugin_textdomain( 'easy-digital-downloads-related-downloads', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+		load_plugin_textdomain( 'easy-digital-downloads-related-downloads', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
 	}
 
 	/**
