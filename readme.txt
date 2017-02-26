@@ -12,7 +12,7 @@ Automatically show related downloads by tag or category when using Easy Digital 
 
 == Description ==
 
-This is an extension for [Easy Digital Downloads](http://wordpress.org/plugins/easy-digital-downloads/) that automatically adds related downloads after the single download content on the single download page. It is simple and light. It works by default without a need for any settings. By default, 3 related downloads will be shown, related by download_tag. The title and featured image will be displayed, centered nicely. The related downloads are added right below the content of the single download.
+This is an extension for Easy Digital Downloads that automatically adds related downloads after the single download content on the single download page. It is simple and light. It works by default without a need for any settings. By default, 3 related downloads will be shown, related by download_tag. The title and featured image will be displayed, centered nicely. The related downloads are added right below the content of the single download.
 
 **Optional - use it as widget**
 It also adds a Related Downloads widget. You can use the widget if you prefer, and disable the automatic related downloads under the content.
@@ -33,13 +33,13 @@ This plugin has 7 optional settings. These options are located at `Downloads -->
 6. Change The Default Method of Sorting (Orderby)
 7. Change The Default Sort Order
 
-For more info, see the [Documentation](http://isabelcastillo.com/docs/category/easy-digital-downloads-related-downloads-wordpress-plugin).
+For more info, see the [Documentation](https://isabelcastillo.com/docs/about-edd-related-downloads).
 
 For support or to report bugs, use the support forum link above.
 
 Fork on [GitHub](https://github.com/isabelc/EDD-Related-Downloads).
 
-Please [rate the plugin](http://wordpress.org/support/view/plugin-reviews/easy-digital-downloads-related-downloads). Thank you.
+Please [rate the plugin](https://wordpress.org/support/view/plugin-reviews/easy-digital-downloads-related-downloads). Thank you.
 
 **Translations**
 
@@ -93,11 +93,11 @@ However, the 2 above will style it just like the sidebar widget, which is list-s
 
 = Can I use a custom image size for the featured image? =
 
-Yes, [see this](http://isabelcastillo.com/docs/different-size-featured-image-edd-related-downloads)
+Yes, [see this](https://isabelcastillo.com/docs/about-edd-related-downloads#docs-imagesize)
 
 = Can I use custom images instead of the featured image for the Related Downloads? = 
 
-Yes, [see this](http://isabelcastillo.com/docs/use-custom-images-instead-of-featured-image-for-related-downloads).
+Yes, [see this](https://isabelcastillo.com/docs/about-edd-related-downloads#docs-custom).
 
 == Screenshots ==
 
