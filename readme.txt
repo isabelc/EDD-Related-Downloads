@@ -3,8 +3,8 @@ Contributors: isabel104, eliorivero
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=me%40isabelcastillo%2ecom
 Tags: EDD, related downloads, easy digital downloads, related posts, download category, download tag, downloads categories, downloads tags, related items, related products
 Requires at least: 3.8
-Tested up to: 4.6
-Stable tag: 1.7
+Tested up to: 4.8-alpha-40124
+Stable tag: 1.7.1
 License: GNU Version 2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -104,6 +104,10 @@ Yes, [see this](https://isabelcastillo.com/docs/about-edd-related-downloads#docs
 1. Settings at Downloads -> Settings -> Extensions tab
 
 == Changelog ==
+
+= 1.7.1 =
+* Tweak - The plugin textdomain should be loaded on the init action rather than the plugins_loaded action.
+* Tweak - Updated links to plugin URI and plugin documentation.
 
 = 1.7 =
 * New = option to show only the related download image without the title.
